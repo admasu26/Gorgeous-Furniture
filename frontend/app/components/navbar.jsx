@@ -44,15 +44,15 @@ export default function Navbar() {
     <header className="sticky top-0 z-50 bg-[#f7f3ec]/90 backdrop-blur-xl border-b border-[#e4d8bf] shadow-[0_8px_30px_rgba(26,24,20,0.06)] transition-all duration-300">
       
       {/* 1. TOP ANNOUNCEMENT BAR WITH 4 SHOWROOM HUBS */}
-      <div className="bg-[#0B0F17] text-amber-50/80 text-[11px] py-2.5 px-4 md:px-12">
+      <div className="bg-[#0B0F17] text-amber-50/80 text-[10px] sm:text-[11px] py-2 sm:py-2.5 px-3 sm:px-4 md:px-12">
         <div className="container mx-auto flex flex-col sm:flex-row justify-between items-center gap-2">
           
           <div className="flex items-center gap-2 font-medium tracking-wide">
             <span className="gold-gradient-bg text-[#0B0F17] px-2.5 py-0.5 rounded-full text-[9px] font-black uppercase tracking-widest">
               Showroom Hubs
             </span>
-            <span className="text-amber-100/70 font-light truncate max-w-xl">
-              CMC (Tsehay Ground Floor) • Semit 72 • Gerji • Betel | Free Addis Ababa Delivery over ETB 50k
+            <span className="text-amber-100/70 font-light truncate max-w-[220px] sm:max-w-xl">
+              CMC • Semit 72 • Gerji • Betel | Free Delivery over ETB 50k
             </span>
           </div>
 
@@ -81,7 +81,7 @@ export default function Navbar() {
       </div>
 
       {/* 2. MAIN HEADER BAR */}
-      <div className="container mx-auto px-4 md:px-8 py-3.5 flex items-center justify-between gap-4">
+      <div className="container mx-auto px-3 sm:px-4 md:px-8 py-2.5 sm:py-3.5 flex items-center justify-between gap-2 sm:gap-4">
         
         {/* Mobile Hamburger */}
         <button
@@ -103,10 +103,10 @@ export default function Navbar() {
             />
           </div>
           <div className="flex flex-col">
-            <span className="text-xl md:text-[22px] font-semibold tracking-tight text-slate-950 font-serif leading-none group-hover:text-[#8c6d2a] transition-colors">
+            <span className="text-lg sm:text-xl md:text-[22px] font-semibold tracking-tight text-slate-950 font-serif leading-none group-hover:text-[#8c6d2a] transition-colors">
               Gorgeous Furniture
             </span>
-            <span className="text-[9px] font-semibold tracking-[0.22em] gold-gradient-text uppercase mt-1">
+            <span className="text-[8px] sm:text-[9px] font-semibold tracking-[0.18em] sm:tracking-[0.22em] gold-gradient-text uppercase mt-0.5 sm:mt-1 hidden xs:block">
               Luxury Contemporary Furnishings
             </span>
           </div>
@@ -202,7 +202,7 @@ export default function Navbar() {
 
       {/* 4. MOBILE DRAWER MENU */}
       {mobileMenuOpen && (
-        <div className="lg:hidden fixed inset-x-0 top-[110px] bg-white text-slate-900 border-b border-amber-200 shadow-2xl p-6 z-50 space-y-6 animate-in slide-in-from-top">
+        <div className="lg:hidden fixed inset-x-0 top-0 mt-[100px] sm:mt-[110px] bg-white text-slate-900 border-b border-amber-200 shadow-2xl p-4 sm:p-6 z-50 space-y-4 sm:space-y-6 max-h-[calc(100vh-110px)] overflow-y-auto">
           {/* Mobile Search */}
           <div className="relative">
             <input
@@ -222,7 +222,7 @@ export default function Navbar() {
                 key={link.name}
                 href={link.href}
                 onClick={() => setMobileMenuOpen(false)}
-                className={`text-xs font-bold tracking-widest py-2 border-b border-amber-100/60 flex items-center justify-between ${
+                className={`text-xs font-bold tracking-widest py-3 border-b border-amber-100/60 flex items-center justify-between ${
                   isCurrent(link.href) ? 'text-[#D4AF37] font-extrabold' : 'text-slate-700 hover:text-[#D4AF37]'
                 }`}
               >

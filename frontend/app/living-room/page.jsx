@@ -32,7 +32,7 @@ export default function LivingRoomPage() {
     <main className="min-h-screen bg-[#f7f3ec] text-slate-900">
       
       {/* HEADER */}
-      <section className="relative py-32 text-white text-center overflow-hidden">
+      <section className="relative py-20 sm:py-32 text-white text-center overflow-hidden">
         <div className="absolute inset-0 z-0">
           <Image
             src="/hero_recliner.png"
@@ -44,14 +44,14 @@ export default function LivingRoomPage() {
           <div className="absolute inset-0 bg-gradient-to-b from-[#0B0F17]/70 via-[#0B0F17]/55 to-[#0B0F17]/75" />
         </div>
 
-        <div className="relative z-10 container mx-auto px-6">
+        <div className="relative z-10 container mx-auto px-4 sm:px-6">
           <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-[#D4AF37]/20 text-[#D4AF37] border border-[#D4AF37]/60 text-xs font-black uppercase tracking-widest mb-5 backdrop-blur-sm shadow">
             <Flame className="w-4 h-4 text-[#D4AF37]" />
             <span>Living Room & Smart Recliners</span>
           </div>
-          <h1 className="text-4xl sm:text-6xl font-serif font-bold tracking-tight text-white drop-shadow-lg">
+          <h1 className="text-3xl sm:text-4xl md:text-6xl font-serif font-bold tracking-tight text-white drop-shadow-lg">
             Smart Recliners
-            <span className="block mt-1 gold-gradient-text italic font-serif text-3xl sm:text-4xl font-normal">& Luxury Lounge Suites</span>
+            <span className="block mt-1 gold-gradient-text italic font-serif text-2xl sm:text-3xl md:text-4xl font-normal">& Luxury Lounge Suites</span>
           </h1>
           <p className="text-amber-100/90 text-sm mt-4 max-w-xl mx-auto font-light leading-relaxed drop-shadow">
             Experience ultimate home comfort — bar-fridge lounges, zero-gravity massage technology, and modular velvet sectionals for your Addis Ababa home.

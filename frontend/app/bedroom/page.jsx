@@ -64,7 +64,7 @@ export default function BedroomPage() {
     <main className="min-h-screen bg-[#f7f3ec] text-slate-900 font-sans">
       
       {/* HEADER */}
-      <section className="relative py-32 text-white text-center overflow-hidden">
+      <section className="relative py-20 sm:py-32 text-white text-center overflow-hidden">
         <div className="absolute inset-0 z-0">
           <Image
             src="/king_bedroom.png"
@@ -76,14 +76,14 @@ export default function BedroomPage() {
           <div className="absolute inset-0 bg-gradient-to-b from-[#0B0F17]/70 via-[#0B0F17]/55 to-[#0B0F17]/75" />
         </div>
 
-        <div className="relative z-10 container mx-auto px-6">
-          <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-[#D4AF37]/20 text-[#D4AF37] border border-[#D4AF37]/60 text-xs font-black uppercase tracking-widest mb-5 backdrop-blur-sm shadow">
-            <BedDouble className="w-4 h-4 text-[#D4AF37]" />
-            <span>Complete King-Sized Bedroom Packages</span>
+        <div className="relative z-10 container mx-auto px-4 sm:px-6">
+          <div className="inline-flex items-center gap-2 px-3 sm:px-4 py-1.5 rounded-full bg-[#D4AF37]/20 text-[#D4AF37] border border-[#D4AF37]/60 text-[10px] sm:text-xs font-black uppercase tracking-widest mb-4 sm:mb-5 backdrop-blur-sm shadow">
+            <BedDouble className="w-3.5 h-3.5 sm:w-4 sm:h-4 text-[#D4AF37]" />
+            <span>King-Sized Bedroom Packages</span>
           </div>
-          <h1 className="text-4xl sm:text-6xl font-serif font-bold tracking-tight text-white drop-shadow-lg">
+          <h1 className="text-3xl sm:text-4xl md:text-6xl font-serif font-bold tracking-tight text-white drop-shadow-lg">
             Luxury Bedroom Suites
-            <span className="block mt-1 gold-gradient-text italic font-serif text-3xl sm:text-4xl font-normal">& Bespoke Packages</span>
+            <span className="block mt-1 gold-gradient-text italic font-serif text-2xl sm:text-3xl md:text-4xl font-normal">&amp; Bespoke Packages</span>
           </h1>
           <p className="text-amber-100/90 text-sm mt-4 max-w-2xl mx-auto font-light leading-relaxed drop-shadow">
             Imported and crafted high-end king bedframes, fitted wardrobes, and matching vanity dressers.

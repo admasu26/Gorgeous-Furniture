@@ -55,7 +55,7 @@ export default function Contact() {
     <main className="min-h-screen bg-[#f7f3ec] text-slate-900 font-sans">
       
       {/* HEADER BANNER */}
-      <section className="relative py-32 text-white overflow-hidden text-center">
+      <section className="relative py-20 sm:py-32 text-white overflow-hidden text-center">
         <div className="absolute inset-0 z-0">
           <Image
             src="/images/contact_header.jpg"
@@ -72,9 +72,9 @@ export default function Contact() {
             <MapPin className="w-4 h-4 text-[#D4AF37]" />
             <span>We Are Here To Help</span>
           </div>
-          <h1 className="text-4xl sm:text-5xl font-serif font-bold mb-4 text-white drop-shadow-lg">
+          <h1 className="text-3xl sm:text-4xl md:text-5xl font-serif font-bold mb-4 text-white drop-shadow-lg">
             Contact Gorgeous Furniture
-            <span className="block mt-1 gold-gradient-text italic font-serif text-3xl sm:text-4xl font-normal">Ethiopia</span>
+            <span className="block mt-1 gold-gradient-text italic font-serif text-2xl sm:text-3xl md:text-4xl font-normal">Ethiopia</span>
           </h1>
           <p className="text-amber-100/90 text-sm font-light leading-relaxed drop-shadow max-w-xl mx-auto">
             Questions about smart recliner couches, custom leather options, or wholesale orders? Visit any of our 4 showrooms or reach us directly.

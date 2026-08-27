@@ -30,7 +30,7 @@ export default function About() {
     <main className="min-h-screen bg-[#f7f3ec] text-slate-900 font-sans">
       
       {/* SECTION 1: HERO HEADER */}
-      <section className="relative py-36 sm:py-40 text-white overflow-hidden text-center">
+      <section className="relative py-20 sm:py-36 text-white overflow-hidden text-center">
         <div className="absolute inset-0 z-0">
           <Image
             src="/images/about_header.jpg"
@@ -47,7 +47,7 @@ export default function About() {
             <Award className="w-4 h-4 text-[#D4AF37]" />
             <span>Established 2020 • Addis Ababa, Ethiopia</span>
           </div>
-          <h1 className="text-4xl sm:text-6xl font-serif font-bold leading-tight mb-5 text-white drop-shadow-lg">
+          <h1 className="text-3xl sm:text-4xl md:text-6xl font-serif font-bold leading-tight mb-5 text-white drop-shadow-lg">
             Crafting Comfort,
             <span className="block mt-1 gold-gradient-text italic font-serif">Style & Durability</span>
           </h1>

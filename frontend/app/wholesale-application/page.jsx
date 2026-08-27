@@ -39,7 +39,7 @@ export default function WholesaleApplicationPage() {
     <main className="min-h-screen bg-[#f7f3ec] text-slate-900 font-sans">
       
       {/* BANNER */}
-      <section className="relative py-32 text-white border-b border-amber-200/80 overflow-hidden text-center">
+      <section className="relative py-20 sm:py-32 text-white border-b border-amber-200/80 overflow-hidden text-center">
         <div className="absolute inset-0 z-0">
           <Image
             src="/images/wholesale_header.jpg"
@@ -56,9 +56,9 @@ export default function WholesaleApplicationPage() {
             <Building2 className="w-4 h-4 text-[#D4AF37]" />
             <span>B2B Commercial & Trade Portal</span>
           </div>
-          <h1 className="text-4xl sm:text-5xl font-serif font-bold mb-4 text-white drop-shadow-lg">
+          <h1 className="text-3xl sm:text-4xl md:text-5xl font-serif font-bold mb-4 text-white drop-shadow-lg">
             Wholesale & Trade
-            <span className="block mt-1 gold-gradient-text italic font-serif text-3xl sm:text-4xl font-normal">Application Portal</span>
+            <span className="block mt-1 gold-gradient-text italic font-serif text-2xl sm:text-3xl md:text-4xl font-normal">Application Portal</span>
           </h1>
           <p className="text-amber-100/90 text-sm font-light leading-relaxed drop-shadow max-w-2xl mx-auto">
             Partner with Gorgeous Furniture Ethiopia. Access direct manufacturer pricing, custom leather & fabric options, and dedicated account support for retail stockists, hospitality projects, and interior designers in East Africa.
