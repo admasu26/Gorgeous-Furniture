@@ -7,10 +7,10 @@ import { useShop } from '../components/ShopContext';
 import { Sparkles, ArrowUpDown } from 'lucide-react';
 
 const diningProducts = [
-  { id: 'marble-dining-set-6', name: 'Calacatta Marble 6-Seater Dining Table Set', price: 115000, img: '/marble_dining.png', badge: 'FLAGSHIP', category: 'Dining Tables', description: 'Genuine white Calacatta marble top supported by gold stainless steel geometric pedestal base.' },
-  { id: 'orissa-dining-suite', name: 'Orissa Velvet 8-Piece Luxury Dining Suite', price: 135000, img: '/marble_dining.png', badge: 'BESTSELLER', category: 'Dining Suites', description: 'Includes expandable luxury dining table and 8 velvet upholstered Orissa dining armchairs.' },
-  { id: 'italian-ceramic-table', name: 'Modern Italian Sintered Stone Dining Table', price: 85000, img: 'https://images.unsplash.com/photo-1577140917170-285929fb55b7?auto=format&fit=crop&q=80&w=800', badge: 'NEW', category: 'Dining Tables', description: 'Heat and scratch-resistant sintered ceramic tabletop with matte black steel spider legs.' },
-  { id: 'oak-wood-dining-table', name: 'Solid Natural Oak Wood 6-Seater Table', price: 75000, img: 'https://images.unsplash.com/photo-1530018607912-eff2daa1bac4?auto=format&fit=crop&q=80&w=800', badge: 'CLASSIC', category: 'Wood Dining', description: 'Sustainably harvested solid oak wood with hand-rubbed organic oil finish.' },
+  { id: 'marble-dining-set-6', name: 'Calacatta Marble 6-Seater Dining Table Set', price: 115000, img: '/images/Dinning table 1.png', badge: 'FLAGSHIP', category: 'Dining Tables', description: 'Genuine white Calacatta marble top supported by gold stainless steel geometric pedestal base.' },
+  { id: 'orissa-dining-suite', name: 'Orissa Velvet 8-Piece Luxury Dining Suite', price: 135000, img: '/images/Dinning table 2.png', badge: 'BESTSELLER', category: 'Dining Suites', description: 'Includes expandable luxury dining table and 8 velvet upholstered Orissa dining armchairs.' },
+  { id: 'italian-ceramic-table', name: 'Modern Italian Sintered Stone Dining Table', price: 85000, img: '/images/Dinning table 3.png', badge: 'NEW', category: 'Dining Tables', description: 'Heat and scratch-resistant sintered ceramic tabletop with matte black steel spider legs.' },
+  { id: 'oak-wood-dining-table', name: 'Calacatta Gold Oval 8-Seater Dining Suite', price: 145000, img: '/marble_dining.png', badge: 'LUXURY', category: 'Dining Tables', description: 'Premium polished natural Calacatta gold veined marble top with brushed brass pedestal.' },
 ];
 
 export default function DiningRoomPage() {

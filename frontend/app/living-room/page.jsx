@@ -9,8 +9,12 @@ import { Flame, ArrowUpDown } from 'lucide-react';
 const livingProducts = [
   { id: 'enfriador-lounge-suite', name: 'Enfriador 3-Piece Lounge Suite with Bar Fridge', price: 115000, img: '/hero_recliner.png', badge: 'BESTSELLER', category: 'Lounge Suites', description: 'Includes built-in bar fridge, cup holders, reclining seats, and USB charging.' },
   { id: 'z600-massage-chair', name: 'Z600 Britanica Zero Gravity Massage Chair', price: 145000, img: '/massage_chair.png', badge: 'FLAGSHIP', category: 'Massage Chairs', description: 'Zero-gravity positioning with Bluetooth sound system & heating.' },
-  { id: 'smart-power-recliner', name: 'Smart Power Motion Recliner 3-Seater Sofa', price: 95000, img: 'https://images.unsplash.com/photo-1493663284031-b7e3aefcae8e?auto=format&fit=crop&q=80&w=800', badge: 'NEW', category: 'Recliners', description: 'Electronic push-button recline with adjustable lumbar support.' },
-  { id: 'modular-l-shape-sofa', name: 'Modular Corner Velvet L-Shape Sectional', price: 88000, img: 'https://images.unsplash.com/photo-1555041469-a586c61ea9bc?auto=format&fit=crop&q=80&w=800', badge: 'TRENDING', category: 'Sectionals', description: 'Ultra-deep seating with reversible chaise and feather-down cushions.' },
+  { id: 'smart-power-recliner', name: 'Smart Power Motion Recliner 3-Seater Sofa', price: 95000, img: '/images/Sofa1.png', badge: 'NEW', category: 'Recliners', description: 'Electronic push-button recline with adjustable lumbar support.' },
+  { id: 'modular-l-shape-sofa', name: 'Modular Corner Velvet L-Shape Sectional', price: 88000, img: '/images/Sofa2.png', badge: 'TRENDING', category: 'Sectionals', description: 'Ultra-deep seating with reversible chaise and feather-down cushions.' },
+  { id: 'royal-tufted-sofa-set', name: 'Royal Velvet Tufted 3+2 Luxury Sofa Suite', price: 125000, img: '/images/Sofa3.png', badge: 'POPULAR', category: 'Lounge Suites', description: 'Hand-tufted plush velvet upholstery with stainless champagne gold accents.' },
+  { id: 'modern-curved-lounge-couch', name: 'Modern Curved Bouclé Statement Sofa', price: 105000, img: '/images/Sofa4.png', badge: 'DESIGNER', category: 'Sectionals', description: 'Architectural curved silhouette in rich fabric with high-resilience foam.' },
+  { id: 'executive-leather-recliner', name: 'Executive Italian Leather Power Recliner Set', price: 135000, img: '/images/Sofa5.png', badge: 'LUXURY', category: 'Recliners', description: 'Top-grain genuine leather with motorized dual footrests and console storage.' },
+  { id: 'nordic-minimalist-couch', name: 'Nordic Contemporary Velvet 4-Seater Couch', price: 78000, img: '/images/Sofa6.png', badge: 'MINIMALIST', category: 'Couches', description: 'Clean lines, removable cushion covers, and reinforced solid hardwood frame.' },
 ];
 
 export default function LivingRoomPage() {

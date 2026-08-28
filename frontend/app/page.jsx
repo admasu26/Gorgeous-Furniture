@@ -43,7 +43,7 @@ const categories = [
   {
     name: 'TV Stands & Media Units',
     subtitle: 'Marble & Fluted Wood Consoles',
-    img: 'https://images.unsplash.com/photo-1594026112284-02bb6f3352fe?auto=format&fit=crop&q=80&w=800',
+    img: '/images/Table1.png',
     href: '/tv-stand',
     badge: 'New Arrivals',
   },
@@ -90,7 +90,7 @@ const tiktokCatalog = [
     title: 'New Container Arrival at Addis Ababa Port & Hubs',
     views: '45.2K Views',
     duration: '0:45',
-    img: '/hero_recliner.png',
+    img: '/images/Sofa2.png',
     desc: 'Unboxing imported luxury sofa sets and marble dining tables landing live at our CMC & Semit hubs.',
   },
   {
@@ -98,7 +98,7 @@ const tiktokCatalog = [
     title: 'Bespoke Sofa Assembly & Texture Stress Test',
     views: '38.9K Views',
     duration: '0:58',
-    img: '/marble_dining.png',
+    img: '/images/Dinning table 2.png',
     desc: 'Demonstrating frame durability, stain resistance of velvet fabrics, and smooth electronic power recliners.',
   },
   {
@@ -106,7 +106,7 @@ const tiktokCatalog = [
     title: 'King Bedroom Suite Setup at Tsehay Real Estate Hub',
     views: '52.1K Views',
     duration: '1:12',
-    img: '/king_bedroom.png',
+    img: '/images/bed2.png',
     desc: 'Complete walkthrough of fitted wardrobes, plush tufted headboards, and marble dresser vanity sets.',
   },
 ];

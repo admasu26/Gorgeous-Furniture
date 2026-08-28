@@ -44,7 +44,7 @@ export default function ProductQuickViewModal() {
         {/* Product Image Section */}
         <div className="relative w-full md:w-1/2 min-h-[300px] md:min-h-[480px] bg-amber-50/40">
           <Image 
-            src={img || 'https://images.unsplash.com/photo-1555041469-a586c61ea9bc?auto=format&fit=crop&q=80&w=800'} 
+            src={img || '/hero_recliner.png'} 
             alt={name} 
             fill 
             className="object-cover"
