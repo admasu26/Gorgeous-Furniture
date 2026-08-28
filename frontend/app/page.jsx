@@ -157,7 +157,7 @@ export default function Home() {
     <main className="min-h-screen bg-[#f7f3ec] text-slate-900 font-sans">
 
       {/* HERO BANNER — full-width, edge-to-edge */}
-      <section className="relative min-h-[90vh] flex items-end bg-[#0B0F17] overflow-hidden">
+      <section className="relative min-h-screen flex items-end bg-[#0B0F17] overflow-hidden">
         <div className="absolute inset-0 z-0">
           <Image
             src="/hero_recliner.png"
