@@ -37,7 +37,7 @@ export default function RootLayout({ children }) {
       <body className="min-h-full flex flex-col bg-[#f7f3ec] text-slate-900 font-sans selection:bg-[#D4AF37] selection:text-slate-950">
         <ShopProvider>
           <Navbar />
-          <div className="flex-1">
+          <div className="flex-1 pb-16 lg:pb-0">
             {children}
           </div>
           <Footer />
