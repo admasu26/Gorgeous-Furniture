@@ -69,9 +69,9 @@ export default function LivingRoomPage() {
   return (
     <main className="min-h-screen bg-[#f7f3ec] text-slate-900 font-sans pb-20">
       
-      {/* HERO BANNER SECTION */}
-      <section className="relative overflow-hidden bg-[#0B0F17] py-16 sm:py-24 md:py-32">
-        {/* Background Image & Overlay */}
+      {/* HERO BANNER SECTION (BRIGHT & CLEAR - NO DARK OVERLAY) */}
+      <section className="relative overflow-hidden bg-[#f7f3ec] py-16 sm:py-24 md:py-32 border-b border-[#e4d8bf]">
+        {/* Full Clarity Background Image */}
         <div className="absolute inset-0 z-0 select-none pointer-events-none">
           <Image
             src="/images/Sofa1.png"
@@ -79,9 +79,10 @@ export default function LivingRoomPage() {
             fill
             priority
             sizes="100vw"
-            className="object-cover object-center opacity-40 scale-105 transition-transform duration-1000 ease-out"
+            className="object-cover object-center opacity-100 scale-105 transition-transform duration-1000 ease-out"
           />
-          <div className="absolute inset-0 bg-gradient-to-t from-[#0B0F17] via-[#0B0F17]/70 to-[#0B0F17]/40" />
+          {/* Subtle light gradient to keep text crisp against bright images */}
+          <div className="absolute inset-0 bg-gradient-to-t from-[#f7f3ec] via-[#f7f3ec]/40 to-transparent" />
         </div>
 
         {/* Banner Content Container */}
@@ -89,21 +90,21 @@ export default function LivingRoomPage() {
           <div className="max-w-3xl mx-auto flex flex-col items-center">
             
             {/* Pill Tag */}
-            <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-white/10 text-[#E8D5A3] border border-[#D4AF37]/40 text-[11px] font-extrabold uppercase tracking-widest backdrop-blur-md shadow-md mb-6">
+            <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-white/80 text-[#8c6d2a] border border-[#D4AF37]/50 text-[11px] font-extrabold uppercase tracking-widest backdrop-blur-md shadow-md mb-6">
               <Flame className="w-4 h-4 text-[#D4AF37] animate-pulse" />
               <span>Living Room & Smart Recliners</span>
             </div>
 
             {/* Main Title */}
-            <h1 className="text-3xl sm:text-5xl md:text-6xl font-serif font-bold tracking-tight text-white drop-shadow-md leading-tight">
+            <h1 className="text-3xl sm:text-5xl md:text-6xl font-serif font-bold tracking-tight text-slate-950 drop-shadow-xs leading-tight">
               Smart Recliners
-              <span className="block mt-2 gold-gradient-text italic font-serif text-2xl sm:text-4xl md:text-5xl font-normal">
+              <span className="block mt-2 text-[#8c6d2a] italic font-serif text-2xl sm:text-4xl md:text-5xl font-normal">
                 & Luxury Lounge Suites
               </span>
             </h1>
 
             {/* Subtitle */}
-            <p className="text-amber-100/90 text-xs sm:text-base mt-5 max-w-xl mx-auto font-light leading-relaxed tracking-wide drop-shadow-xs">
+            <p className="text-slate-800 text-xs sm:text-base mt-5 max-w-xl mx-auto font-medium leading-relaxed tracking-wide drop-shadow-xs">
               Experience ultimate home comfort — bar-fridge lounges, zero-gravity massage technology, and modular velvet sectionals designed for elegant Addis Ababa residences.
             </p>
           </div>
