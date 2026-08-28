@@ -157,7 +157,7 @@ export default function Navbar() {
           {/* Cart Icon */}
           <button
             onClick={() => setIsCartOpen(true)}
-            className="relative p-2 text-slate-700 hover:text-[#D4AF37] transition flex items-center gap-2 group"
+            className="relative hidden sm:flex p-2 text-slate-700 hover:text-[#D4AF37] transition items-center gap-2 group"
             aria-label="View Shopping Cart"
           >
             <div className="relative">
@@ -252,61 +252,40 @@ export default function Navbar() {
         </div>
       )}
 
-      {/* MOBILE ACTION BAR */}
-      <nav className="lg:hidden fixed bottom-0 inset-x-0 z-[60] bg-[#fffdf8]/95 backdrop-blur-xl border-t border-[#e4d8bf] shadow-[0_-8px_30px_rgba(26,24,20,0.12)] pb-[env(safe-area-inset-bottom)]" aria-label="Mobile navigation">
-        <div className="grid grid-cols-4 h-16 max-w-md mx-auto">
-          <button
-            type="button"
-            onClick={() => setMobileMenuOpen(true)}
-            className="flex flex-col items-center justify-center gap-1 text-slate-700 hover:text-[#8c6d2a] transition"
-            aria-label="Search furniture"
-            title="Search"
-          >
-            <Search className="w-5 h-5" />
-            <span className="text-[9px] font-semibold uppercase tracking-wider">Search</span>
-          </button>
-
-          <Link
-            href="/chairs"
-            className="relative flex flex-col items-center justify-center gap-1 text-slate-700 hover:text-[#8c6d2a] transition"
-            aria-label="View wishlist"
-            title="Wishlist"
-          >
+      {/* MOBILE BOTTOM NAVIGATION */}
+      <nav className="mobile-bottom-nav lg:hidden" aria-label="Mobile quick navigation">
+        <button
+          type="button"
+          onClick={() => setMobileMenuOpen(true)}
+          className="mobile-nav-action"
+          aria-label="Search furniture"
+        >
+          <Search className="w-5 h-5" />
+          <span>Search</span>
+        </button>
+        <Link href="/chairs" className="mobile-nav-action" aria-label="View wishlist">
+          <span className="relative">
             <Heart className="w-5 h-5" />
-            {wishlist.length > 0 && (
-              <span className="absolute top-2 left-1/2 ml-2 w-4 h-4 bg-[#D4AF37] text-[#0B0F17] rounded-full text-[9px] font-black flex items-center justify-center">
-                {wishlist.length}
-              </span>
-            )}
-            <span className="text-[9px] font-semibold uppercase tracking-wider">Saved</span>
-          </Link>
-
-          <button
-            type="button"
-            onClick={() => setIsCartOpen(true)}
-            className="relative flex flex-col items-center justify-center gap-1 text-slate-700 hover:text-[#8c6d2a] transition"
-            aria-label="View shopping cart"
-            title="Cart"
-          >
+            {wishlist.length > 0 && <span className="mobile-nav-badge">{wishlist.length}</span>}
+          </span>
+          <span>Wishlist</span>
+        </Link>
+        <button
+          type="button"
+          onClick={() => setIsCartOpen(true)}
+          className="mobile-nav-action"
+          aria-label="View shopping cart"
+        >
+          <span className="relative">
             <ShoppingBag className="w-5 h-5" />
-            {cartCount > 0 && (
-              <span className="absolute top-2 left-1/2 ml-2 w-4 h-4 bg-[#D4AF37] text-[#0B0F17] rounded-full text-[9px] font-black flex items-center justify-center">
-                {cartCount}
-              </span>
-            )}
-            <span className="text-[9px] font-semibold uppercase tracking-wider">Cart</span>
-          </button>
-
-          <Link
-            href="/wholesale-application"
-            className="flex flex-col items-center justify-center gap-1 text-slate-700 hover:text-[#8c6d2a] transition"
-            aria-label="View profile"
-            title="Profile"
-          >
-            <User className="w-5 h-5" />
-            <span className="text-[9px] font-semibold uppercase tracking-wider">Profile</span>
-          </Link>
-        </div>
+            {cartCount > 0 && <span className="mobile-nav-badge">{cartCount}</span>}
+          </span>
+          <span>Cart</span>
+        </button>
+        <Link href="/wholesale-application" className="mobile-nav-action" aria-label="Open profile">
+          <User className="w-5 h-5" />
+          <span>Profile</span>
+        </Link>
       </nav>
     </header>
   );
