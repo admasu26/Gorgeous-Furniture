@@ -49,7 +49,7 @@ export default function LivingRoomPage() {
   const [sortOrder, setSortOrder] = useState('DEFAULT');
   const { searchQuery } = useShop();
 
-  // Memoize filtered and sorted list to optimize render cycles
+  // Memoize search filtering and sorting logic
   const sortedProducts = useMemo(() => {
     const query = searchQuery ? searchQuery.toLowerCase().trim() : '';
 
@@ -67,44 +67,45 @@ export default function LivingRoomPage() {
   }, [searchQuery, sortOrder]);
 
   return (
-    <main className="min-h-screen bg-[#f7f3ec] text-slate-900 font-sans pb-20">
+    <main className="min-h-screen bg-[#f7f3ec] text-slate-900 font-sans pb-24">
       
-      {/* HERO BANNER SECTION (BRIGHT & CLEAR - NO DARK OVERLAY) */}
-      <section className="relative overflow-hidden bg-[#f7f3ec] py-16 sm:py-24 md:py-32 border-b border-[#e4d8bf]">
-        {/* Full Clarity Background Image */}
+      {/* HERO BANNER SECTION (BRIGHT & CLEAR FURNITURE DISPLAY) */}
+      <section className="relative overflow-hidden bg-slate-950 py-16 sm:py-24 md:py-28">
+        
+        {/* Background Image & Lightened Overlay */}
         <div className="absolute inset-0 z-0 select-none pointer-events-none">
           <Image
             src="/images/Sofa1.png"
-            alt="Luxury Living Room Furniture Showroom"
+            alt="Luxury Living Room Lounge Furniture"
             fill
             priority
             sizes="100vw"
-            className="object-cover object-center opacity-100 scale-105 transition-transform duration-1000 ease-out"
+            className="object-cover object-center opacity-85 scale-100 transition-all duration-700"
           />
-          {/* Subtle light gradient to keep text crisp against bright images */}
-          <div className="absolute inset-0 bg-gradient-to-t from-[#f7f3ec] via-[#f7f3ec]/40 to-transparent" />
+          {/* Subtle vignette and bottom gradient to keep text readable while showing furniture clearly */}
+          <div className="absolute inset-0 bg-gradient-to-t from-[#0B0F17] via-[#0B0F17]/35 to-[#0B0F17]/20" />
         </div>
 
-        {/* Banner Content Container */}
+        {/* Hero Text Box */}
         <div className="relative z-10 luxury-container px-4 sm:px-6 text-center">
           <div className="max-w-3xl mx-auto flex flex-col items-center">
             
-            {/* Pill Tag */}
-            <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-white/80 text-[#8c6d2a] border border-[#D4AF37]/50 text-[11px] font-extrabold uppercase tracking-widest backdrop-blur-md shadow-md mb-6">
+            {/* Category Tag */}
+            <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-slate-900/60 text-[#E8D5A3] border border-[#D4AF37]/60 text-[11px] font-extrabold uppercase tracking-widest backdrop-blur-md shadow-lg mb-4">
               <Flame className="w-4 h-4 text-[#D4AF37] animate-pulse" />
               <span>Living Room & Smart Recliners</span>
             </div>
 
-            {/* Main Title */}
-            <h1 className="text-3xl sm:text-5xl md:text-6xl font-serif font-bold tracking-tight text-slate-950 drop-shadow-xs leading-tight">
+            {/* Title */}
+            <h1 className="text-3xl sm:text-5xl md:text-6xl font-serif font-bold tracking-tight text-white drop-shadow-md leading-tight">
               Smart Recliners
-              <span className="block mt-2 text-[#8c6d2a] italic font-serif text-2xl sm:text-4xl md:text-5xl font-normal">
+              <span className="block mt-1 gold-gradient-text italic font-serif text-2xl sm:text-4xl md:text-5xl font-normal">
                 & Luxury Lounge Suites
               </span>
             </h1>
 
-            {/* Subtitle */}
-            <p className="text-slate-800 text-xs sm:text-base mt-5 max-w-xl mx-auto font-medium leading-relaxed tracking-wide drop-shadow-xs">
+            {/* Description */}
+            <p className="text-amber-50 text-xs sm:text-base mt-4 max-w-xl mx-auto font-normal leading-relaxed tracking-wide drop-shadow-[0_2px_4px_rgba(0,0,0,0.8)]">
               Experience ultimate home comfort — bar-fridge lounges, zero-gravity massage technology, and modular velvet sectionals designed for elegant Addis Ababa residences.
             </p>
           </div>
@@ -112,16 +113,15 @@ export default function LivingRoomPage() {
       </section>
 
       {/* FILTER & PRODUCT GRID SECTION */}
-      <section className="py-10 sm:py-14">
+      <section className="py-8 sm:py-12">
         <div className="luxury-container px-4 sm:px-6">
           
-          {/* Outer Glass Card Wrapper */}
-          <div className="bg-white/70 backdrop-blur-md border border-[#e4d8bf] rounded-2xl p-5 sm:p-8 md:p-10 shadow-[0_10px_35px_rgba(26,24,20,0.04)]">
+          {/* Container Panel */}
+          <div className="bg-white/80 backdrop-blur-md border border-[#e4d8bf] rounded-2xl p-5 sm:p-8 md:p-10 shadow-[0_10px_30px_rgba(26,24,20,0.04)]">
             
-            {/* Action Bar / Controls */}
+            {/* Filter and Count Row */}
             <div className="flex flex-col sm:flex-row justify-between items-start sm:items-center pb-6 border-b border-[#e4d8bf]/60 gap-4 mb-8">
               
-              {/* Product Counter */}
               <div className="flex items-center gap-2">
                 <SlidersHorizontal className="w-4 h-4 text-[#8c6d2a]" />
                 <p className="text-xs font-bold text-slate-700 uppercase tracking-wider">
@@ -129,15 +129,15 @@ export default function LivingRoomPage() {
                 </p>
               </div>
 
-              {/* Sorting Selection Dropdown */}
+              {/* Sort Selector */}
               <div className="flex items-center gap-2.5 w-full sm:w-auto">
-                <label htmlFor="sort-select" className="sr-only">
+                <label htmlFor="sort-order-select" className="sr-only">
                   Sort Products
                 </label>
                 <div className="relative flex items-center w-full sm:w-auto">
                   <ArrowUpDown className="w-3.5 h-3.5 text-[#8c6d2a] absolute left-3.5 pointer-events-none" />
                   <select
-                    id="sort-select"
+                    id="sort-order-select"
                     value={sortOrder}
                     onChange={(e) => setSortOrder(e.target.value)}
                     className="w-full sm:w-auto bg-[#f7f3ec] border border-[#d9ccb2] rounded-full pl-9 pr-8 py-2 text-xs font-bold text-slate-900 focus:outline-none focus:border-[#c9a227] focus:ring-2 focus:ring-[#c9a227]/20 transition shadow-xs cursor-pointer appearance-none"
@@ -150,7 +150,7 @@ export default function LivingRoomPage() {
               </div>
             </div>
 
-            {/* Product Cards Layout Grid */}
+            {/* Product Cards Grid */}
             {sortedProducts.length > 0 ? (
               <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 sm:gap-8">
                 {sortedProducts.map((product) => (
@@ -158,10 +158,10 @@ export default function LivingRoomPage() {
                 ))}
               </div>
             ) : (
-              /* Empty State when search returns no matches */
+              /* Search Empty State */
               <div className="py-16 text-center">
                 <p className="text-base font-serif text-slate-700">No living room products match your search query.</p>
-                <p className="text-xs text-slate-500 mt-1">Try resetting your search criteria in the navigation bar.</p>
+                <p className="text-xs text-slate-500 mt-1">Try resetting your search query in the header search bar.</p>
               </div>
             )}
 
