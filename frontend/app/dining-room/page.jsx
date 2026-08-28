@@ -9,8 +9,8 @@ import { Sparkles, ArrowUpDown } from 'lucide-react';
 const diningProducts = [
   { id: 'marble-dining-set-6', name: 'Calacatta Marble 6-Seater Dining Table Set', price: 115000, img: '/marble_dining.png', badge: 'FLAGSHIP', category: 'Dining Tables', description: 'Genuine white Calacatta marble top supported by gold stainless steel geometric pedestal base.' },
   { id: 'orissa-dining-suite', name: 'Orissa Velvet 8-Piece Luxury Dining Suite', price: 135000, img: '/marble_dining.png', badge: 'BESTSELLER', category: 'Dining Suites', description: 'Includes expandable luxury dining table and 8 velvet upholstered Orissa dining armchairs.' },
-  { id: 'italian-ceramic-table', name: 'Modern Italian Sintered Stone Dining Table', price: 85000, img: 'https://images.unsplash.com/photo-1577140917170-285929fb55b7?auto=format&fit=crop&q=80&w=800', badge: 'NEW', category: 'Dining Tables', description: 'Heat and scratch-resistant sintered ceramic tabletop with matte black steel spider legs.' },
-  { id: 'oak-wood-dining-table', name: 'Solid Natural Oak Wood 6-Seater Table', price: 75000, img: 'https://images.unsplash.com/photo-1530018607912-eff2daa1bac4?auto=format&fit=crop&q=80&w=800', badge: 'CLASSIC', category: 'Wood Dining', description: 'Sustainably harvested solid oak wood with hand-rubbed organic oil finish.' },
+  { id: 'italian-ceramic-table', name: 'Modern Italian Sintered Stone Dining Table', price: 85000, img: '/images/Dinning table 2.png', badge: 'NEW', category: 'Dining Tables', description: 'Heat and scratch-resistant sintered ceramic tabletop with matte black steel spider legs.' },
+  { id: 'oak-wood-dining-table', name: 'Solid Natural Oak Wood 6-Seater Table', price: 75000, img: '/images/Dinning table 3.png', badge: 'CLASSIC', category: 'Wood Dining', description: 'Sustainably harvested solid oak wood with hand-rubbed organic oil finish.' },
 ];
 
 export default function DiningRoomPage() {
@@ -32,12 +32,12 @@ export default function DiningRoomPage() {
     <main className="min-h-screen bg-[#f7f3ec] text-slate-900 font-sans pb-16">
       
       {/* HEADER BANNER (FRAMED CONTAINER LAYOUT) */}
-      <section className="pt-6 sm:pt-10 px-3 sm:px-6">
-        <div className="luxury-container">
-          <div className="relative py-16 sm:py-24 rounded-[28px] sm:rounded-[36px] text-white text-center overflow-hidden border border-[#D4AF37]/35 shadow-[0_20px_50px_rgba(11,15,23,0.35)] bg-[#0B0F17]">
+      <section>
+        <div className="w-full">
+          <div className="relative min-h-screen flex items-center text-white text-center overflow-hidden bg-[#0B0F17]">
             <div className="absolute inset-0 z-0">
               <Image
-                src="/marble_dining.png"
+                src="/images/Dinning table 1.png"
                 alt="Dining Room Tables & Suites Header"
                 fill
                 priority

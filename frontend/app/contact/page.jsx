@@ -55,9 +55,9 @@ export default function Contact() {
     <main className="min-h-screen bg-[#f7f3ec] text-slate-900 font-sans pb-16">
       
       {/* HEADER BANNER (FRAMED CONTAINER LAYOUT) */}
-      <section className="pt-6 sm:pt-10 px-3 sm:px-6">
-        <div className="luxury-container">
-          <div className="relative py-16 sm:py-24 rounded-[28px] sm:rounded-[36px] text-white text-center overflow-hidden border border-[#D4AF37]/35 shadow-[0_20px_50px_rgba(11,15,23,0.35)] bg-[#0B0F17]">
+      <section>
+        <div className="w-full">
+          <div className="relative min-h-screen flex items-center text-white text-center overflow-hidden bg-[#0B0F17]">
             <div className="absolute inset-0 z-0">
               <Image
                 src="/images/contact_header.jpg"

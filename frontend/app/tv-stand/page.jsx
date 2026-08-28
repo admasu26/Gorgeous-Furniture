@@ -7,10 +7,10 @@ import { useShop } from '../components/ShopContext';
 import { Sparkles, ArrowUpDown } from 'lucide-react';
 
 const tvProducts = [
-  { id: 'marble-tv-unit', name: 'Calacatta Marble Top Media Console (2.2m)', price: 55000, img: 'https://images.unsplash.com/photo-1594026112284-02bb6f3352fe?auto=format&fit=crop&q=80&w=800', badge: 'POPULAR', category: 'TV Units', description: 'White marble top media unit with soft-closing drawers and gold stainless trim.' },
-  { id: 'gold-coffee-table-set', name: 'Luxury Gold & Slate Nesting Coffee Tables', price: 28000, img: 'https://images.unsplash.com/photo-1533779283484-8da49dea501d?auto=format&fit=crop&q=80&w=800', badge: 'BESTSELLER', category: 'Coffee Tables', description: 'Set of 2 nesting round tables with sintered stone top and champagne gold base.' },
-  { id: 'fluted-wood-tv-stand', name: 'Nordic Fluted Oak TV Stand Console', price: 42000, img: 'https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&q=80&w=800', badge: 'NEW', category: 'TV Units', description: 'Tambour door fluted wood TV unit with cable management ports.' },
-  { id: 'glass-coffee-table', name: 'Tempered Glass & Brass Coffee Table', price: 22000, img: 'https://images.unsplash.com/photo-1586023492125-27b2c045efd7?auto=format&fit=crop&q=80&w=800', badge: 'CLASSIC', category: 'Coffee Tables', description: 'Heavy-duty tempered glass shelf with architectural geometric brass frame.' },
+  { id: 'marble-tv-unit', name: 'Calacatta Marble Top Media Console (2.2m)', price: 55000, img: '/images/Table1.png', badge: 'POPULAR', category: 'TV Units', description: 'White marble top media unit with soft-closing drawers and gold stainless trim.' },
+  { id: 'gold-coffee-table-set', name: 'Luxury Gold & Slate Nesting Coffee Tables', price: 28000, img: '/images/Table2.png', badge: 'BESTSELLER', category: 'Coffee Tables', description: 'Set of 2 nesting round tables with sintered stone top and champagne gold base.' },
+  { id: 'fluted-wood-tv-stand', name: 'Nordic Fluted Oak TV Stand Console', price: 42000, img: '/images/Table3.png', badge: 'NEW', category: 'TV Units', description: 'Tambour door fluted wood TV unit with cable management ports.' },
+  { id: 'glass-coffee-table', name: 'Tempered Glass & Brass Coffee Table', price: 22000, img: '/images/Table1.png', badge: 'CLASSIC', category: 'Coffee Tables', description: 'Heavy-duty tempered glass shelf with architectural geometric brass frame.' },
 ];
 
 export default function TvStandPage() {
@@ -32,9 +32,9 @@ export default function TvStandPage() {
     <main className="min-h-screen bg-[#f7f3ec] text-slate-900 font-sans pb-16">
       
       {/* HEADER BANNER (FRAMED CONTAINER LAYOUT) */}
-      <section className="pt-6 sm:pt-10 px-3 sm:px-6">
-        <div className="luxury-container">
-          <div className="relative py-16 sm:py-24 rounded-[28px] sm:rounded-[36px] text-white text-center overflow-hidden border border-[#D4AF37]/35 shadow-[0_20px_50px_rgba(11,15,23,0.35)] bg-[#0B0F17]">
+      <section>
+        <div className="w-full">
+          <div className="relative min-h-screen flex items-center text-white text-center overflow-hidden bg-[#0B0F17]">
             <div className="absolute inset-0 z-0">
               <Image
                 src="/images/tv_stand_header.jpg"

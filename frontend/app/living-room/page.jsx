@@ -9,8 +9,8 @@ import { Flame, ArrowUpDown } from 'lucide-react';
 const livingProducts = [
   { id: 'enfriador-lounge-suite', name: 'Enfriador 3-Piece Lounge Suite with Bar Fridge', price: 115000, img: '/hero_recliner.png', badge: 'BESTSELLER', category: 'Lounge Suites', description: 'Includes built-in bar fridge, cup holders, reclining seats, and USB charging.' },
   { id: 'z600-massage-chair', name: 'Z600 Britanica Zero Gravity Massage Chair', price: 145000, img: '/massage_chair.png', badge: 'FLAGSHIP', category: 'Massage Chairs', description: 'Zero-gravity positioning with Bluetooth sound system & heating.' },
-  { id: 'smart-power-recliner', name: 'Smart Power Motion Recliner 3-Seater Sofa', price: 95000, img: 'https://images.unsplash.com/photo-1493663284031-b7e3aefcae8e?auto=format&fit=crop&q=80&w=800', badge: 'NEW', category: 'Recliners', description: 'Electronic push-button recline with adjustable lumbar support.' },
-  { id: 'modular-l-shape-sofa', name: 'Modular Corner Velvet L-Shape Sectional', price: 88000, img: 'https://images.unsplash.com/photo-1555041469-a586c61ea9bc?auto=format&fit=crop&q=80&w=800', badge: 'TRENDING', category: 'Sectionals', description: 'Ultra-deep seating with reversible chaise and feather-down cushions.' },
+  { id: 'smart-power-recliner', name: 'Smart Power Motion Recliner 3-Seater Sofa', price: 95000, img: '/images/Sofa3.png', badge: 'NEW', category: 'Recliners', description: 'Electronic push-button recline with adjustable lumbar support.' },
+  { id: 'modular-l-shape-sofa', name: 'Modular Corner Velvet L-Shape Sectional', price: 88000, img: '/images/Sofa4.png', badge: 'TRENDING', category: 'Sectionals', description: 'Ultra-deep seating with reversible chaise and feather-down cushions.' },
 ];
 
 export default function LivingRoomPage() {
@@ -32,12 +32,12 @@ export default function LivingRoomPage() {
     <main className="min-h-screen bg-[#f7f3ec] text-slate-900 font-sans pb-16">
       
       {/* HEADER BANNER (FRAMED CONTAINER LAYOUT) */}
-      <section className="pt-6 sm:pt-10 px-3 sm:px-6">
-        <div className="luxury-container">
-          <div className="relative py-16 sm:py-24 rounded-[28px] sm:rounded-[36px] text-white text-center overflow-hidden border border-[#D4AF37]/35 shadow-[0_20px_50px_rgba(11,15,23,0.35)] bg-[#0B0F17]">
+      <section>
+        <div className="w-full">
+          <div className="relative min-h-screen flex items-center text-white text-center overflow-hidden bg-[#0B0F17]">
             <div className="absolute inset-0 z-0">
               <Image
-                src="/hero_recliner.png"
+                src="/images/Sofa1.png"
                 alt="Living Room Lounge Suites"
                 fill
                 priority
