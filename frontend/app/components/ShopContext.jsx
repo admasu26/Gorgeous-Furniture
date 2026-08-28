@@ -8,9 +8,9 @@ export function ShopProvider({ children }) {
   const [cart, setCart] = useState([
     {
       id: 'z600-massage-chair',
-      name: 'Z600 Britanica Zero Gravity Massage Chair',
-      price: 145000,
-      image: '/massage_chair.png',
+      name: 'Z600 Britanica Cozy Mate Massage Chair',
+      price: 24999,
+      image: 'https://images.unsplash.com/photo-1505693419173-42b921831191?auto=format&fit=crop&q=80&w=800',
       quantity: 1,
       variant: 'Obsidian Black',
     }
