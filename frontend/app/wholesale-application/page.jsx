@@ -253,6 +253,7 @@ export default function WholesaleApplicationPage() {
             )}
           </div>
 
+          </div>
         </div>
       </section>
 

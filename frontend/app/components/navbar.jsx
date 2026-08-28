@@ -20,6 +20,7 @@ import {
   ShieldCheck,
   Armchair,
 } from 'lucide-react';
+import { WhatsAppIcon } from './Icons';
 
 const navLinks = [
   { name: 'Home', href: '/' },

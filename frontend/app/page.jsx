@@ -156,7 +156,6 @@ export default function Home() {
   return (
     <main className="min-h-screen bg-[#f7f3ec] text-slate-900 font-sans">
       
-      {/* SECTION 1: HERO BANNER */}
       {/* SECTION 1: HERO BANNER (FRAMED CONTAINER LAYOUT) */}
       <section className="relative pt-6 pb-12 sm:pt-10 sm:pb-16 px-3 sm:px-6">
         <div className="luxury-container">
