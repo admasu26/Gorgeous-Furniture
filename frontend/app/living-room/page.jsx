@@ -83,7 +83,7 @@ export default function LivingRoomPage() {
             className="object-cover object-center opacity-85 scale-100 transition-all duration-700"
           />
           {/* Subtle vignette and bottom gradient to keep text readable while showing furniture clearly */}
-          <div className="absolute inset-0 bg-gradient-to-t from-[#0B0F17] via-[#0B0F17]/35 to-[#0B0F17]/20" />
+          <div className="absolute inset-0 bg-gradient-to-t from-[#0B0F17] via-[#0B0F17]/30 to-[#0B0F17]/15" />
         </div>
 
         {/* Hero Text Box */}
