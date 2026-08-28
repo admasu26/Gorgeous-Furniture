@@ -36,6 +36,7 @@ const navLinks = [
 
 export default function Navbar() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
+  const [mobileSearchOpen, setMobileSearchOpen] = useState(false);
   const pathname = usePathname();
   const { cartCount, wishlist, setIsCartOpen, searchQuery, setSearchQuery } = useShop();
 
@@ -94,8 +95,8 @@ export default function Navbar() {
         </button>
 
         {/* LOGO SECTION */}
-        <Link href="/" className="flex items-center gap-3 group">
-          <div className="relative w-11 h-11 rounded-full overflow-hidden border-2 border-[#D4AF37] shadow-[0_0_15px_rgba(212,175,55,0.5)] group-hover:scale-108 transition-all duration-300">
+        <Link href="/" className="flex items-center gap-2 sm:gap-3 group shrink-0">
+          <div className="relative w-10 h-10 sm:w-11 sm:h-11 rounded-full overflow-hidden border-2 border-[#D4AF37] shadow-[0_0_15px_rgba(212,175,55,0.5)] group-hover:scale-108 transition-all duration-300">
             <Image
               src="/images/logo.png"
               alt="Gorgeous Furniture Logo"
@@ -103,7 +104,7 @@ export default function Navbar() {
               className="object-cover"
             />
           </div>
-          <div className="flex flex-col">
+          <div className="hidden sm:flex flex-col">
             <span className="text-lg sm:text-xl md:text-[22px] font-semibold tracking-tight text-slate-950 font-serif leading-none group-hover:text-[#8c6d2a] transition-colors">
               Gorgeous Furniture
             </span>
@@ -126,7 +127,17 @@ export default function Navbar() {
         </div>
 
         {/* ICONS & ACTIONS */}
-        <div className="flex items-center gap-2 sm:gap-4">
+        <div className="flex items-center gap-0.5 sm:gap-4">
+
+          {/* Mobile Search Icon */}
+          <button
+            onClick={() => setMobileSearchOpen(!mobileSearchOpen)}
+            className="lg:hidden p-2 text-slate-700 hover:text-[#D4AF37] transition group"
+            aria-label="Toggle Search"
+            title="Search"
+          >
+            <Search className="w-[18px] h-[18px] group-hover:scale-110 transition-transform" />
+          </button>
           
           {/* WhatsApp Support Direct Button */}
           <a
@@ -143,7 +154,7 @@ export default function Navbar() {
           {/* Wishlist Icon */}
           <Link
             href="/chairs"
-            className="relative p-2 text-slate-700 hover:text-[#D4AF37] transition group hidden sm:flex"
+            className="relative p-2 text-slate-700 hover:text-[#D4AF37] transition group flex"
             title="Wishlist"
           >
             <Heart className="w-5 h-5 group-hover:scale-110 transition-transform" />
@@ -176,13 +187,30 @@ export default function Navbar() {
           {/* User Account Icon */}
           <Link
             href="/wholesale-application"
-            className="hidden sm:flex items-center gap-1.5 p-2 text-slate-700 hover:text-[#D4AF37] transition text-xs font-bold uppercase group"
+            className="flex items-center gap-1.5 p-2 text-slate-700 hover:text-[#D4AF37] transition text-xs font-bold uppercase group"
             title="Account / Wholesale"
           >
             <User className="w-5 h-5 group-hover:scale-110 transition-transform" />
           </Link>
         </div>
       </div>
+
+      {/* MOBILE SEARCH FIELD */}
+      {mobileSearchOpen && (
+        <div className="lg:hidden border-t border-[#e4d8bf] bg-[#f7f3ec] px-4 py-3 shadow-inner">
+          <div className="relative">
+            <input
+              type="text"
+              autoFocus
+              placeholder="Search furniture collection..."
+              value={searchQuery}
+              onChange={(e) => setSearchQuery(e.target.value)}
+              className="w-full bg-white border border-[#d9ccb2] rounded-full py-3 pl-10 pr-4 text-xs font-medium text-slate-900 placeholder:text-slate-500 focus:outline-none focus:border-[#c9a227] focus:ring-2 focus:ring-[#c9a227]/20 transition"
+            />
+            <Search className="absolute left-3.5 top-3.5 w-4 h-4 text-[#D4AF37]" />
+          </div>
+        </div>
+      )}
 
       {/* 3. CATEGORY LINKS ROW (Desktop) */}
       <nav className="hidden lg:block bg-[#f7f3ec]/80 border-t border-[#e4d8bf]">
