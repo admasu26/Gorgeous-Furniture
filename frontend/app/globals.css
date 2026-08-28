@@ -280,9 +280,3 @@ body::before {
     padding-bottom: env(safe-area-inset-bottom);
   }
 }
-
-@media (max-width: 1023px) {
-  body {
-    padding-bottom: 4rem;
-  }
-}
