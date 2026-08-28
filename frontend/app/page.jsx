@@ -157,7 +157,7 @@ export default function Home() {
     <main className="min-h-screen bg-[#f7f3ec] text-slate-900 font-sans">
 
       {/* HERO BANNER — full-width, edge-to-edge */}
-      <section className="relative min-h-screen flex items-end bg-[#0B0F17] overflow-hidden">
+      <section className="relative min-h-[72vh] flex items-end bg-[#0B0F17] overflow-hidden">
         <div className="absolute inset-0 z-0">
           <Image
             src="/hero_recliner.png"
@@ -170,34 +170,34 @@ export default function Home() {
           <div className="absolute inset-0 bg-gradient-to-t from-[#0B0F17] via-transparent to-[#0B0F17]/25" />
         </div>
 
-        <div className="relative z-10 container mx-auto px-6 pb-16 sm:pb-24 animate-fade-up">
-          <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-white/10 backdrop-blur-md border border-[#D4AF37]/40 text-[#E8D5A3] text-[11px] font-semibold uppercase tracking-[0.22em] mb-6 shadow-md">
+        <div className="relative z-10 container mx-auto px-6 pb-10 sm:pb-14 animate-fade-up">
+          <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-white/10 backdrop-blur-md border border-[#D4AF37]/40 text-[#E8D5A3] text-[10px] sm:text-[11px] font-semibold uppercase tracking-[0.22em] mb-4 shadow-md">
             <Building2 className="w-3.5 h-3.5 text-[#D4AF37]" />
             <span>Addis Ababa's Upscale Furnisher</span>
           </div>
 
-          <h1 className="text-white text-4xl sm:text-6xl lg:text-[5rem] font-serif font-medium max-w-4xl leading-[1.05] mb-6">
+          <h1 className="text-white text-3xl sm:text-5xl lg:text-[4.25rem] font-serif font-medium max-w-4xl leading-[1.05] mb-4">
             Furniture that feels like
-            <span className="block mt-2 italic font-normal gold-gradient-text-soft text-3xl sm:text-5xl lg:text-[4rem]">
+            <span className="block mt-1 italic font-normal gold-gradient-text-soft text-2xl sm:text-4xl lg:text-[3.5rem]">
               a private showroom
             </span>
           </h1>
 
-          <p className="text-amber-50/80 text-base sm:text-lg max-w-2xl font-light mb-10 leading-relaxed">
+          <p className="text-amber-50/80 text-sm sm:text-base max-w-2xl font-light mb-7 leading-relaxed">
             Imported sofa sets, king bedroom suites, and marble dining tables — styled, tested, and delivered from four premier hubs across Addis Ababa.
           </p>
 
-          <div className="flex flex-col sm:flex-row items-stretch sm:items-center gap-4 mb-16">
+          <div className="flex flex-col sm:flex-row items-stretch sm:items-center gap-3 mb-9">
             <Link
               href="/bedroom"
-              className="flex items-center justify-center gap-3 gold-metallic-btn px-9 py-4 rounded-full text-xs uppercase transition-all shadow-xl"
+              className="flex items-center justify-center gap-3 gold-metallic-btn px-8 py-3.5 rounded-full text-xs uppercase transition-all shadow-xl"
             >
               <span>Explore King Bedrooms</span>
               <ArrowRight className="w-4 h-4 text-[#0B0F17]" />
             </Link>
             <Link
               href="/contact"
-              className="flex items-center justify-center gap-2 border border-white/35 bg-white/10 text-white hover:bg-white hover:text-[#0B0F17] px-8 py-4 rounded-full text-xs font-semibold tracking-[0.16em] uppercase backdrop-blur-md transition-all shadow-md"
+              className="flex items-center justify-center gap-2 border border-white/35 bg-white/10 text-white hover:bg-white hover:text-[#0B0F17] px-7 py-3.5 rounded-full text-xs font-semibold tracking-[0.16em] uppercase backdrop-blur-md transition-all shadow-md"
             >
               <span>Visit a Showroom</span>
             </Link>
@@ -210,8 +210,8 @@ export default function Home() {
               ['TikTok', 'Video catalog'],
               ['Warranty', 'Quality guaranteed'],
             ].map(([title, subtitle]) => (
-              <div key={title} className="rounded-2xl border border-white/15 bg-black/30 backdrop-blur-md px-4 py-4">
-                <p className="text-2xl font-serif text-[#E8D5A3]">{title}</p>
+              <div key={title} className="rounded-2xl border border-white/15 bg-black/30 backdrop-blur-md px-4 py-3">
+                <p className="text-xl font-serif text-[#E8D5A3]">{title}</p>
                 <p className="text-amber-100/60 text-[10px] uppercase tracking-wider mt-1">{subtitle}</p>
               </div>
             ))}
