@@ -42,7 +42,7 @@ export default function Navbar() {
   const isCurrent = (path) => pathname === path;
 
   return (
-    <header className="sticky top-0 z-50 bg-[#f7f3ec]/90 backdrop-blur-xl border-b border-[#e4d8bf] shadow-[0_8px_30px_rgba(26,24,20,0.06)] transition-all duration-300">
+    <header className="relative sticky top-0 z-50 bg-[#f7f3ec]/90 backdrop-blur-xl border-b border-[#e4d8bf] shadow-[0_8px_30px_rgba(26,24,20,0.06)] transition-all duration-300">
       
       {/* 1. TOP ANNOUNCEMENT BAR WITH 4 SHOWROOM HUBS */}
       <div className="bg-[#0B0F17] text-amber-50/80 text-[10px] sm:text-[11px] py-2 sm:py-2.5 px-3 sm:px-4 md:px-6">
@@ -87,7 +87,7 @@ export default function Navbar() {
         {/* Mobile Hamburger */}
         <button
           onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
-          className="lg:hidden p-2 text-slate-800 hover:text-[#D4AF37] focus:outline-none transition"
+          className="lg:hidden p-2.5 text-slate-800 hover:text-[#D4AF37] focus:outline-none transition"
           aria-label="Toggle Menu"
         >
           {mobileMenuOpen ? <X className="w-6 h-6 text-[#D4AF37]" /> : <Menu className="w-6 h-6" />}
@@ -208,7 +208,7 @@ export default function Navbar() {
 
       {/* 4. MOBILE DRAWER MENU */}
       {mobileMenuOpen && (
-        <div className="lg:hidden fixed inset-x-0 top-0 mt-[100px] sm:mt-[110px] bg-white text-slate-900 border-b border-amber-200 shadow-2xl p-4 sm:p-6 z-50 space-y-4 sm:space-y-6 max-h-[calc(100vh-110px)] overflow-y-auto">
+        <div className="lg:hidden absolute top-full inset-x-0 bg-white text-slate-900 border-b border-amber-200 shadow-2xl p-4 sm:p-6 z-50 space-y-4 sm:space-y-6 max-h-[calc(100vh-7rem)] overflow-y-auto">
           {/* Mobile Search */}
           <div className="relative">
             <input
