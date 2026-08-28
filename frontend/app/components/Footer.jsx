@@ -56,7 +56,7 @@ export default function Footer() {
       </div>
       
       {/* 1. TRUST BADGES STRIP */}
-      <div className="relative z-10 container mx-auto px-6 pb-12 mb-12 border-b border-white/10 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+      <div className="relative z-10 luxury-container pb-12 mb-12 border-b border-white/10 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
         <div className="group flex items-center gap-4 p-5 rounded-2xl bg-white/5 border border-white/10 hover:border-[#D4AF37]/50 transition-all duration-300">
           <div className="p-3.5 bg-[#D4AF37]/10 text-[#D4AF37] rounded-xl border border-[#D4AF37]/30 group-hover:scale-110 transition-transform">
             <Truck className="w-6 h-6" />
@@ -99,7 +99,7 @@ export default function Footer() {
       </div>
 
       {/* 2. MAIN FOOTER CONTENT */}
-      <div className="relative z-10 container mx-auto px-6 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 mb-16">
+      <div className="relative z-10 luxury-container grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 mb-16">
         
         {/* BRAND & NEWSLETTER */}
         <div className="space-y-6">
@@ -301,7 +301,7 @@ export default function Footer() {
       </div>
 
       {/* 3. COPYRIGHT & BOTTOM LINKS */}
-      <div className="relative z-10 container mx-auto px-6 pt-8 border-t border-white/10">
+      <div className="relative z-10 luxury-container pt-8 border-t border-white/10">
         <div className="flex flex-col md:flex-row items-center justify-between gap-4 text-center md:text-left">
           <div>
             <h5 className="text-xs font-semibold uppercase tracking-widest text-[#E8D5A3] mb-1">Addis Ababa Showroom Hubs</h5>

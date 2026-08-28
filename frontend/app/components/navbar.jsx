@@ -44,8 +44,8 @@ export default function Navbar() {
     <header className="sticky top-0 z-50 bg-[#f7f3ec]/90 backdrop-blur-xl border-b border-[#e4d8bf] shadow-[0_8px_30px_rgba(26,24,20,0.06)] transition-all duration-300">
       
       {/* 1. TOP ANNOUNCEMENT BAR WITH 4 SHOWROOM HUBS */}
-      <div className="bg-[#0B0F17] text-amber-50/80 text-[10px] sm:text-[11px] py-2 sm:py-2.5 px-3 sm:px-4 md:px-12">
-        <div className="container mx-auto flex flex-col sm:flex-row justify-between items-center gap-2">
+      <div className="bg-[#0B0F17] text-amber-50/80 text-[10px] sm:text-[11px] py-2 sm:py-2.5 px-3 sm:px-4 md:px-6">
+        <div className="luxury-container flex flex-col sm:flex-row justify-between items-center gap-2">
           
           <div className="flex items-center gap-2 font-medium tracking-wide">
             <span className="gold-gradient-bg text-[#0B0F17] px-2.5 py-0.5 rounded-full text-[9px] font-black uppercase tracking-widest">
@@ -81,7 +81,7 @@ export default function Navbar() {
       </div>
 
       {/* 2. MAIN HEADER BAR */}
-      <div className="container mx-auto px-3 sm:px-4 md:px-8 py-2.5 sm:py-3.5 flex items-center justify-between gap-2 sm:gap-4">
+      <div className="luxury-container py-2.5 sm:py-3.5 flex items-center justify-between gap-2 sm:gap-4">
         
         {/* Mobile Hamburger */}
         <button
@@ -92,7 +92,7 @@ export default function Navbar() {
           {mobileMenuOpen ? <X className="w-6 h-6 text-[#D4AF37]" /> : <Menu className="w-6 h-6" />}
         </button>
 
-        {/* LOGO SECTION WITH PUBLIC FOLDER IMAGE AND TITLE CASE BRAND */}
+        {/* LOGO SECTION */}
         <Link href="/" className="flex items-center gap-3 group">
           <div className="relative w-11 h-11 rounded-full overflow-hidden border-2 border-[#D4AF37] shadow-[0_0_15px_rgba(212,175,55,0.5)] group-hover:scale-108 transition-all duration-300">
             <Image
@@ -119,25 +119,30 @@ export default function Navbar() {
             placeholder="Search couches, dining tables, massage chairs..."
             value={searchQuery}
             onChange={(e) => setSearchQuery(e.target.value)}
-            className="w-full bg-amber-50/40 border border-amber-200/80 rounded-full py-2.5 pl-10 pr-4 text-xs text-slate-800 focus:outline-none focus:border-[#D4AF37] focus:ring-2 focus:ring-[#D4AF37]/30 focus:bg-white transition shadow-sm"
+            className="w-full bg-[#f7f3ec] border border-[#d9ccb2] rounded-full py-2 pl-4 pr-10 text-xs font-medium text-slate-900 placeholder:text-slate-500 focus:outline-none focus:border-[#c9a227] focus:ring-2 focus:ring-[#c9a227]/20 transition shadow-inner"
           />
-          <Search className="w-4 h-4 text-[#D4AF37] absolute left-3.5 top-3" />
-          {searchQuery && (
-            <button 
-              onClick={() => setSearchQuery('')}
-              className="absolute right-3 top-2.5 text-xs text-slate-400 hover:text-[#D4AF37]"
-            >
-              Clear
-            </button>
-          )}
+          <Search className="absolute right-3.5 top-2.5 w-4 h-4 text-slate-400" />
         </div>
 
-        {/* RIGHT ACTION ICONS */}
-        <div className="flex items-center gap-3 md:gap-5">
+        {/* ICONS & ACTIONS */}
+        <div className="flex items-center gap-2 sm:gap-4">
+          
+          {/* WhatsApp Support Direct Button */}
+          <a
+            href="https://wa.me/251940510000?text=Hi%20Gorgeous%20Furniture!%20I'd%20like%20to%20inquire%20about%20your%20luxury%20products."
+            target="_blank"
+            rel="noopener noreferrer"
+            className="hidden sm:flex items-center gap-2 px-3 sm:px-4 py-2 rounded-full bg-[#25D366]/10 text-[#128C7E] border border-[#25D366]/30 text-[10px] sm:text-xs font-bold hover:bg-[#25D366] hover:text-white transition group shadow-xs"
+            title="Chat on WhatsApp"
+          >
+            <WhatsAppIcon className="w-3.5 h-3.5 fill-[#128C7E] group-hover:fill-white transition-colors" />
+            <span className="hidden md:inline">0940510000</span>
+          </a>
+
           {/* Wishlist Icon */}
           <Link
             href="/chairs"
-            className="relative p-2 text-slate-700 hover:text-[#D4AF37] transition group"
+            className="relative p-2 text-slate-700 hover:text-[#D4AF37] transition group hidden sm:flex"
             title="Wishlist"
           >
             <Heart className="w-5 h-5 group-hover:scale-110 transition-transform" />
@@ -180,7 +185,7 @@ export default function Navbar() {
 
       {/* 3. CATEGORY LINKS ROW (Desktop) */}
       <nav className="hidden lg:block bg-[#f7f3ec]/80 border-t border-[#e4d8bf]">
-        <div className="container mx-auto px-8 flex items-center justify-center space-x-7">
+        <div className="luxury-container flex items-center justify-center space-x-7">
           {navLinks.map((link) => {
             const active = isCurrent(link.href);
             return (

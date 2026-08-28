@@ -157,69 +157,76 @@ export default function Home() {
     <main className="min-h-screen bg-[#f7f3ec] text-slate-900 font-sans">
       
       {/* SECTION 1: HERO BANNER */}
-      <section className="relative min-h-[85vh] sm:min-h-[88vh] py-16 sm:py-24 flex items-end overflow-hidden bg-[#0B0F17]">
-        <div className="absolute inset-0 z-0">
-          <Image
-            src="/hero_recliner.png"
-            alt="Luxury Recliner Living Room Ethiopia"
-            fill
-            priority
-            className="object-cover hero-kenburns"
-          />
-          <div className="absolute inset-0 bg-gradient-to-r from-[#0B0F17] via-[#0B0F17]/70 to-[#0B0F17]/20" />
-          <div className="absolute inset-0 bg-gradient-to-t from-[#0B0F17]/80 via-transparent to-[#0B0F17]/30" />
-        </div>
+      {/* SECTION 1: HERO BANNER (FRAMED CONTAINER LAYOUT) */}
+      <section className="relative pt-6 pb-12 sm:pt-10 sm:pb-16 px-3 sm:px-6">
+        <div className="luxury-container">
+          <div className="relative min-h-[82vh] sm:min-h-[86vh] rounded-[28px] sm:rounded-[36px] overflow-hidden bg-[#0B0F17] flex items-end border border-[#D4AF37]/35 shadow-[0_24px_60px_-15px_rgba(11,15,23,0.45)]">
+            <div className="absolute inset-0 z-0">
+              <Image
+                src="/hero_recliner.png"
+                alt="Luxury Recliner Living Room Ethiopia"
+                fill
+                priority
+                className="object-cover hero-kenburns"
+              />
+              <div className="absolute inset-0 bg-gradient-to-r from-[#0B0F17] via-[#0B0F17]/75 to-[#0B0F17]/25" />
+              <div className="absolute inset-0 bg-gradient-to-t from-[#0B0F17] via-transparent to-[#0B0F17]/30" />
+            </div>
 
-        <div className="relative z-10 container mx-auto px-4 sm:px-6 md:px-16 pb-6 sm:pb-10 animate-fade-up">
-          
-          <div className="inline-flex items-center gap-2 px-3 sm:px-4 py-1.5 rounded-full bg-white/10 backdrop-blur-md border border-[#D4AF37]/40 text-[#E8D5A3] text-[10px] sm:text-[11px] font-semibold uppercase tracking-[0.18em] sm:tracking-[0.22em] mb-5 sm:mb-7">
-            <Building2 className="w-3 h-3 sm:w-3.5 sm:h-3.5 text-[#D4AF37]" />
-            <span>Addis Ababa's Upscale Furnisher</span>
-          </div>
-
-          <h1 className="text-white text-3xl sm:text-5xl lg:text-[4.6rem] font-serif font-medium max-w-4xl leading-[1.1] sm:leading-[1.08] mb-4 sm:mb-6">
-            Furniture that feels like a private showroom
-            <span className="block mt-1 sm:mt-2 italic font-normal gold-gradient-text-soft text-2xl sm:text-4xl lg:text-[3.6rem]">in the heart of Addis Ababa</span>
-          </h1>
-
-          <p className="text-amber-50/80 text-sm sm:text-base sm:text-lg max-w-2xl font-light mb-6 sm:mb-9 leading-relaxed">
-            Imported sofa sets, king bedroom suites, and marble dining tables — styled, tested, and delivered from four premier hubs: CMC, Semit 72, Gerji, and Betel.
-          </p>
-
-          <div className="flex flex-col sm:flex-row items-stretch sm:items-center gap-3 sm:gap-4">
-            <Link
-              href="/bedroom"
-              className="flex items-center justify-center gap-3 gold-metallic-btn px-6 sm:px-8 py-3.5 sm:py-4 rounded-full text-xs uppercase transition-all"
-            >
-              <span>Explore King Bedrooms</span>
-              <ArrowRight className="w-4 h-4 text-[#0B0F17]" />
-            </Link>
-
-            <Link
-              href="/contact"
-              className="flex items-center justify-center gap-2 border border-white/30 bg-white/5 text-white hover:bg-white hover:text-[#0B0F17] px-6 sm:px-8 py-3.5 sm:py-4 rounded-full text-xs font-semibold tracking-[0.16em] uppercase backdrop-blur-sm transition-all"
-            >
-              <span>Visit a Showroom</span>
-            </Link>
-          </div>
-
-          <div className="grid grid-cols-2 sm:grid-cols-4 gap-3 sm:gap-4 mt-8 sm:mt-14 max-w-4xl">
-            {[
-              ['4 Hubs', 'CMC, Semit, Gerji, Betel'],
-              ['Bespoke', 'Custom dimensions'],
-              ['TikTok', 'Video catalog'],
-              ['Warranty', 'Quality guaranteed'],
-            ].map(([title, subtitle]) => (
-              <div key={title} className="rounded-xl sm:rounded-2xl border border-white/10 bg-white/5 backdrop-blur-md px-3 sm:px-4 py-3 sm:py-4">
-                <p className="text-lg sm:text-2xl font-serif text-[#E8D5A3]">{title}</p>
-                <p className="text-amber-100/55 text-[10px] sm:text-[11px] uppercase tracking-wider mt-0.5 sm:mt-1">{subtitle}</p>
+            <div className="relative z-10 p-6 sm:p-10 md:p-14 lg:p-16 w-full animate-fade-up">
+              <div className="inline-flex items-center gap-2 px-3 sm:px-4 py-1.5 rounded-full bg-white/10 backdrop-blur-md border border-[#D4AF37]/40 text-[#E8D5A3] text-[10px] sm:text-[11px] font-semibold uppercase tracking-[0.18em] sm:tracking-[0.22em] mb-4 sm:mb-6 shadow-md">
+                <Building2 className="w-3.5 h-3.5 text-[#D4AF37]" />
+                <span>Addis Ababa's Upscale Furnisher</span>
               </div>
-            ))}
+
+              <h1 className="text-white text-3xl sm:text-5xl lg:text-[4.4rem] font-serif font-medium max-w-4xl leading-[1.1] sm:leading-[1.06] mb-4 sm:mb-6">
+                Furniture that feels like a private showroom
+                <span className="block mt-1 sm:mt-2 italic font-normal gold-gradient-text-soft text-2xl sm:text-4xl lg:text-[3.5rem]">
+                  in the heart of Addis Ababa
+                </span>
+              </h1>
+
+              <p className="text-amber-50/85 text-sm sm:text-base sm:text-lg max-w-2xl font-light mb-6 sm:mb-8 leading-relaxed">
+                Imported sofa sets, king bedroom suites, and marble dining tables — styled, tested, and delivered from four premier hubs: CMC, Semit 72, Gerji, and Betel.
+              </p>
+
+              <div className="flex flex-col sm:flex-row items-stretch sm:items-center gap-3 sm:gap-4 max-w-xl">
+                <Link
+                  href="/bedroom"
+                  className="flex items-center justify-center gap-3 gold-metallic-btn px-7 sm:px-9 py-3.5 sm:py-4 rounded-full text-xs uppercase transition-all shadow-xl"
+                >
+                  <span>Explore King Bedrooms</span>
+                  <ArrowRight className="w-4 h-4 text-[#0B0F17]" />
+                </Link>
+
+                <Link
+                  href="/contact"
+                  className="flex items-center justify-center gap-2 border border-white/35 bg-white/10 text-white hover:bg-white hover:text-[#0B0F17] px-6 sm:px-8 py-3.5 sm:py-4 rounded-full text-xs font-semibold tracking-[0.16em] uppercase backdrop-blur-md transition-all shadow-md"
+                >
+                  <span>Visit a Showroom</span>
+                </Link>
+              </div>
+
+              <div className="grid grid-cols-2 sm:grid-cols-4 gap-3 sm:gap-4 mt-8 sm:mt-12 max-w-4xl">
+                {[
+                  ['4 Hubs', 'CMC, Semit, Gerji, Betel'],
+                  ['Bespoke', 'Custom dimensions'],
+                  ['TikTok', 'Video catalog'],
+                  ['Warranty', 'Quality guaranteed'],
+                ].map(([title, subtitle]) => (
+                  <div key={title} className="rounded-2xl border border-white/15 bg-black/30 backdrop-blur-md px-4 py-3 sm:py-4">
+                    <p className="text-lg sm:text-2xl font-serif text-[#E8D5A3]">{title}</p>
+                    <p className="text-amber-100/60 text-[10px] sm:text-[11px] uppercase tracking-wider mt-0.5">{subtitle}</p>
+                  </div>
+                ))}
+              </div>
+            </div>
           </div>
         </div>
       </section>
 
-      <div className="bg-[#0B0F17] border-y border-[#D4AF37]/20 overflow-hidden py-3">
+      {/* MARQUEE STRIP */}
+      <div className="bg-[#0B0F17] border-y border-[#D4AF37]/20 overflow-hidden py-3 mb-10">
         <div className="marquee-track text-[#E8D5A3] text-[11px] font-semibold uppercase tracking-[0.32em]">
           {Array.from({ length: 2 }).map((_, loop) => (
             <div key={loop} className="flex items-center">
@@ -234,53 +241,256 @@ export default function Home() {
         </div>
       </div>
 
-      {/* SECTION 2: SHOWROOM HUBS LOCATION GRID */}
-      <section className="py-16 sm:py-24 bg-[#f7f3ec] text-slate-900">
-        <div className="container mx-auto px-4 sm:px-6">
-          <div className="text-center max-w-2xl mx-auto mb-16">
-            <span className="section-kicker block mb-3">
-              Physical Showroom Network
+      {/* SECTION 2: SHOWROOM HUBS (CONTAINER PANEL) */}
+      <section className="py-8 sm:py-12">
+        <div className="luxury-container">
+          <div className="container-panel p-6 sm:p-10 md:p-12">
+            <div className="text-center max-w-2xl mx-auto mb-10 sm:mb-14">
+              <span className="section-kicker block mb-2 sm:mb-3">
+                Physical Showroom Network
+              </span>
+              <h2 className="text-3xl sm:text-4xl md:text-5xl font-medium tracking-tight font-serif text-slate-950">
+                Visit our Addis Ababa hubs
+              </h2>
+              <p className="text-slate-600 text-xs sm:text-sm mt-3 font-light leading-relaxed">
+                Experience product assembly, feel fabric textures, and test our smart recliners live at any of our flagship hubs.
+              </p>
+              <div className="w-16 h-1 gold-gradient-bg mx-auto mt-4 rounded-full" />
+            </div>
+
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+              {showroomHubs.map((hub, idx) => (
+                <div key={idx} className="p-6 rounded-2xl bg-amber-50/35 border border-[#eadfcb] shadow-xs space-y-4 island-card flex flex-col justify-between">
+                  <div>
+                    <div className="flex justify-between items-start mb-3">
+                      <div className="p-2.5 bg-amber-100/70 text-[#8c6d2a] border border-amber-200/80 rounded-xl">
+                        <MapPin className="w-4 h-4" />
+                      </div>
+                      <span className="text-[9px] font-black uppercase tracking-widest text-[#9A7B4F] bg-amber-100/80 px-2.5 py-1 rounded-full border border-amber-200/80">
+                        {hub.tag}
+                      </span>
+                    </div>
+
+                    <h3 className="text-base font-black font-serif text-slate-950">{hub.name}</h3>
+                    <p className="text-[11px] text-[#9A7B4F] font-extrabold uppercase tracking-wider mt-0.5">{hub.district}</p>
+
+                    <p className="text-xs text-slate-600 font-light leading-relaxed mt-3">
+                      {hub.address}
+                    </p>
+                  </div>
+
+                  <div className="space-y-3 pt-2">
+                    <p className="text-[11px] text-[#9A7B4F] font-bold italic border-t border-amber-200/60 pt-2">
+                      ✨ {hub.highlight}
+                    </p>
+
+                    <div className="flex items-center justify-between pt-1">
+                      <a href={`tel:${hub.phone.replace(/\s+/g, '')}`} className="text-xs font-mono font-bold text-slate-950 hover:text-[#D4AF37] transition">
+                        {hub.phone}
+                      </a>
+                      <Link href="/contact" className="text-[10px] font-black uppercase tracking-widest text-[#9A7B4F] hover:underline">
+                        Directions →
+                      </Link>
+                    </div>
+                  </div>
+                </div>
+              ))}
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* SECTION 2B: GORGEOUS RESTAURANT CROSS-BRAND HIGHLIGHT (FRAMED BANNER CONTAINER) */}
+      <section className="py-6 sm:py-8">
+        <div className="luxury-container">
+          <div className="rounded-3xl bg-gradient-to-r from-amber-100/70 via-white to-amber-100/70 border border-amber-300/70 p-6 sm:p-8 md:p-10 shadow-[0_12px_36px_rgba(26,24,20,0.06)] flex flex-col md:flex-row items-center justify-between gap-6">
+            <div className="flex items-center gap-4 sm:gap-6">
+              <div className="p-3.5 sm:p-4 bg-amber-50 text-[#D4AF37] border border-amber-200 rounded-2xl shrink-0 shadow-sm">
+                <Sparkles className="w-7 h-7 text-[#D4AF37]" />
+              </div>
+              <div>
+                <span className="text-[10px] font-black text-[#9A7B4F] uppercase tracking-[0.25em] block">
+                  SISTER LUXURY VENUE • AICC CMC
+                </span>
+                <h3 className="text-xl sm:text-2xl font-serif font-bold text-slate-950 mt-1">
+                  Visiting Our CMC Showroom? Experience Gorgeous Restaurant
+                </h3>
+                <p className="text-xs sm:text-sm text-slate-700 font-light mt-1.5 max-w-2xl leading-relaxed">
+                  Located directly opposite our CMC Tsehay showroom inside the Addis International Convention Center (AICC). Enjoy fine European fusion plates, Awaze Beef Chikina Tibs, and romantic luxury ambiance.
+                </p>
+              </div>
+            </div>
+
+            <a
+              href="https://wa.me/251911234567?text=Hi%20Gorgeous%20Restaurant!%20I'd%20like%20to%20reserve%20a%20table."
+              target="_blank"
+              rel="noopener noreferrer"
+              className="gold-metallic-btn px-6 sm:px-8 py-3.5 rounded-full text-xs font-black uppercase tracking-widest shrink-0 shadow-md text-center"
+            >
+              Explore Reservations
+            </a>
+          </div>
+        </div>
+      </section>
+
+      {/* SECTION 3: CATEGORY SHOWCASE (CONTAINER LAYOUT) */}
+      <section className="py-10 sm:py-16">
+        <div className="luxury-container">
+          <div className="text-center max-w-2xl mx-auto mb-10 sm:mb-14">
+            <span className="section-kicker block mb-2 sm:mb-3">
+              Signature Product Expertise
             </span>
-            <h2 className="text-3xl sm:text-5xl font-medium tracking-tight font-serif text-slate-950">
-              Visit our Addis Ababa hubs
+            <h2 className="text-3xl sm:text-4xl md:text-5xl font-medium text-slate-950 tracking-tight font-serif">
+              Core luxury collections
             </h2>
-            <p className="text-slate-600 text-xs sm:text-sm mt-3 font-light">
-              Experience product assembly, feel fabric textures, and test our smart recliners live at any of our flagship hubs.
-            </p>
+            <div className="w-16 h-1 gold-gradient-bg mx-auto mt-4 rounded-full" />
           </div>
 
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
-            {showroomHubs.map((hub, idx) => (
-              <div key={idx} className="p-6 rounded-[22px] bg-white border border-[#eadfcb] shadow-[0_12px_30px_rgba(26,24,20,0.05)] space-y-4 gold-card-hover">
-                <div className="flex justify-between items-start">
-                  <div className="p-3 bg-amber-50 text-[#D4AF37] border border-amber-200 rounded-xl">
-                    <MapPin className="w-5 h-5" />
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 sm:gap-8">
+            {categories.map((cat) => (
+              <Link key={cat.name} href={cat.href} className="group flex flex-col">
+                <div className="relative h-[300px] sm:h-[400px] rounded-3xl overflow-hidden shadow-xl bg-[#0B0F17] mb-3 border border-amber-200/50 gold-card-hover">
+                  <Image
+                    src={cat.img}
+                    alt={cat.name}
+                    fill
+                    className="object-cover group-hover:scale-110 opacity-95 group-hover:opacity-100 transition-all duration-700"
+                  />
+                  <div className="absolute inset-0 bg-gradient-to-t from-[#0B0F17] via-[#0B0F17]/30 to-transparent" />
+                  
+                  {cat.badge && (
+                    <span className="absolute top-4 left-4 gold-gradient-bg text-[#0B0F17] text-[9px] font-black uppercase tracking-widest px-3 py-1 rounded-full shadow-md">
+                      {cat.badge}
+                    </span>
+                  )}
+
+                  <div className="absolute bottom-6 left-6 right-6 text-white">
+                    <h3 className="text-base font-black tracking-wider uppercase group-hover:text-[#D4AF37] transition-colors">{cat.name}</h3>
+                    <p className="text-xs text-amber-100/80 font-light mt-1 flex items-center justify-between">
+                      <span>{cat.subtitle}</span>
+                      <ChevronRight className="w-4 h-4 text-[#D4AF37] group-hover:translate-x-1 transition-transform" />
+                    </p>
                   </div>
-                  <span className="text-[9px] font-black uppercase tracking-widest text-[#9A7B4F] bg-amber-100/60 px-2.5 py-1 rounded-full border border-amber-200">
-                    {hub.tag}
-                  </span>
+                </div>
+              </Link>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* SECTION 4: BESPOKE CUSTOMIZATION STUDIO BANNER (CONTAINER PANEL DARK) */}
+      <section className="py-8 sm:py-12">
+        <div className="luxury-container">
+          <div className="container-panel-dark p-6 sm:p-10 md:p-14 relative overflow-hidden text-white">
+            <div className="flex flex-col lg:flex-row items-center gap-8 sm:gap-12 relative z-10">
+              <div className="lg:w-3/5 space-y-6">
+                <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-[#D4AF37]/20 text-[#D4AF37] border border-[#D4AF37]/50 text-xs font-black uppercase tracking-widest">
+                  <Scissors className="w-4 h-4 text-[#D4AF37]" />
+                  <span>Bespoke Material & Floor Plan Service</span>
                 </div>
 
-                <div>
-                  <h3 className="text-base font-black font-serif text-slate-950">{hub.name}</h3>
-                  <p className="text-[11px] text-[#9A7B4F] font-extrabold uppercase tracking-wider mt-0.5">{hub.district}</p>
+                <h2 className="text-2xl sm:text-3xl md:text-5xl font-serif font-bold gold-gradient-text-soft leading-tight">
+                  Tailor-Made Dimensions & Fabric Swatches
+                </h2>
+
+                <p className="text-amber-100/80 text-xs sm:text-sm font-light leading-relaxed">
+                  Gorgeous Furniture is renowned across Addis Ababa for its bespoke customization. Choose exact couch dimensions, L-shape orientations, and over <strong className="text-white font-medium">50+ luxury fabric & leather color options</strong> tailored to your specific villa or apartment floor plan.
+                </p>
+
+                <div className="grid grid-cols-1 sm:grid-cols-3 gap-4 pt-4 border-t border-amber-900/50 text-xs">
+                  <div className="flex items-center gap-2">
+                    <CheckCircle2 className="w-4 h-4 text-[#D4AF37] shrink-0" />
+                    <span>Custom Sofa Lengths</span>
+                  </div>
+                  <div className="flex items-center gap-2">
+                    <CheckCircle2 className="w-4 h-4 text-[#D4AF37] shrink-0" />
+                    <span>50+ Swatches</span>
+                  </div>
+                  <div className="flex items-center gap-2">
+                    <CheckCircle2 className="w-4 h-4 text-[#D4AF37] shrink-0" />
+                    <span>Floor Plan Fitting</span>
+                  </div>
                 </div>
 
-                <p className="text-xs text-slate-600 font-light leading-relaxed">
-                  {hub.address}
-                </p>
-
-                <p className="text-[11px] text-[#9A7B4F] font-bold italic border-t border-amber-100 pt-2">
-                  ✨ {hub.highlight}
-                </p>
-
-                <div className="pt-2 flex items-center justify-between">
-                  <a href={`tel:${hub.phone.replace(/\s+/g, '')}`} className="text-xs font-mono font-bold text-slate-950 hover:text-[#D4AF37] transition">
-                    {hub.phone}
+                <div className="pt-2 flex flex-wrap gap-4">
+                  <a
+                    href="https://wa.me/251911234567?text=Hi%20Gorgeous%20Furniture!%20I'd%20like%20to%20request%20custom%20sofa%20dimensions%20and%20fabric%20swatches%20for%20my%20home."
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="gold-metallic-btn px-8 py-4 rounded-full text-xs font-black uppercase tracking-widest transition shadow-xl"
+                  >
+                    Request Bespoke Swatches & Quote
                   </a>
-                  <Link href="/contact" className="text-[10px] font-black uppercase tracking-widest text-[#9A7B4F] hover:underline">
-                    Directions →
-                  </Link>
+                </div>
+              </div>
+
+              <div className="lg:w-2/5 relative h-[240px] sm:h-[340px] w-full rounded-2xl overflow-hidden border border-[#D4AF37]/40 shadow-2xl">
+                <Image
+                  src="/king_bedroom.png"
+                  alt="Bespoke Custom Furniture Studio Addis Ababa"
+                  fill
+                  className="object-cover"
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* SECTION 5: TIKTOK VIDEO CATALOG & CONTAINER ARRIVALS */}
+      <section className="py-10 sm:py-14">
+        <div className="luxury-container">
+          <div className="flex flex-col md:flex-row justify-between items-start md:items-end mb-10 sm:mb-12 gap-6">
+            <div>
+              <span className="text-xs font-black text-[#8c6d2a] uppercase tracking-[0.25em] flex items-center gap-2 mb-2">
+                <Video className="w-4 h-4 text-[#D4AF37]" />
+                <span>Digital Video Catalog</span>
+              </span>
+              <h2 className="text-3xl sm:text-4xl md:text-5xl font-medium text-slate-950 tracking-tight font-serif">
+                TikTok previews & new arrivals
+              </h2>
+            </div>
+
+            <a
+              href="https://www.tiktok.com"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="gold-metallic-btn px-6 py-3 rounded-full text-xs font-black uppercase tracking-widest flex items-center gap-2 shadow-md"
+            >
+              <span>Follow TikTok Catalog</span>
+              <Play className="w-3.5 h-3.5 fill-[#0B0F17]" />
+            </a>
+          </div>
+
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-6 sm:gap-8">
+            {tiktokCatalog.map((video) => (
+              <div key={video.id} className="container-panel overflow-hidden gold-card-hover flex flex-col justify-between">
+                <div className="relative h-60 bg-[#0B0F17] overflow-hidden">
+                  <Image
+                    src={video.img}
+                    alt={video.title}
+                    fill
+                    className="object-cover opacity-95 hover:scale-105 transition-transform duration-500"
+                  />
+                  <div className="absolute inset-0 bg-gradient-to-t from-[#0B0F17] via-transparent to-transparent" />
+                  
+                  <span className="absolute top-3 right-3 bg-[#0B0F17]/90 text-[#D4AF37] text-[10px] font-bold px-2.5 py-1 rounded-full border border-[#D4AF37]/40">
+                    {video.duration}
+                  </span>
+
+                  <div className="absolute inset-0 flex items-center justify-center">
+                    <div className="w-12 h-12 rounded-full bg-[#D4AF37]/90 text-[#0B0F17] flex items-center justify-center shadow-2xl transform hover:scale-110 transition">
+                      <Play className="w-5 h-5 fill-[#0B0F17] ml-0.5" />
+                    </div>
+                  </div>
+                </div>
+
+                <div className="p-6 space-y-2">
+                  <span className="text-[10px] font-extrabold text-[#8c6d2a] uppercase tracking-wider block">
+                    {video.views} • TikTok Video Preview
+                  </span>
+                  <h4 className="text-sm font-extrabold text-slate-950 font-serif leading-snug">{video.title}</h4>
+                  <p className="text-xs text-slate-600 font-light leading-relaxed">{video.desc}</p>
                 </div>
               </div>
             ))}
@@ -288,302 +498,121 @@ export default function Home() {
         </div>
       </section>
 
-      {/* SECTION 2B: GORGEOUS RESTAURANT CROSS-BRAND HIGHLIGHT */}
-      <section className="bg-gradient-to-r from-amber-100/40 via-white to-amber-100/40 py-12 text-slate-900 border-b border-amber-200">
-        <div className="container mx-auto px-6 flex flex-col md:flex-row items-center justify-between gap-6">
-          <div className="flex items-center gap-4">
-            <div className="p-3.5 bg-amber-50 text-[#D4AF37] border border-amber-200 rounded-2xl shrink-0 shadow-sm">
-              <Sparkles className="w-7 h-7 text-[#D4AF37]" />
+      {/* SECTION 6: FEATURED PRODUCTS GRID (CONTAINER PANEL) */}
+      <section className="py-10 sm:py-14">
+        <div className="luxury-container">
+          <div className="container-panel p-6 sm:p-10 md:p-12">
+            <div className="flex flex-col md:flex-row justify-between items-start md:items-end mb-10 sm:mb-12 gap-6">
+              <div>
+                <span className="text-xs font-black text-[#8c6d2a] uppercase tracking-[0.25em] block mb-2">
+                  Showroom Best Sellers
+                </span>
+                <h2 className="text-3xl sm:text-4xl md:text-5xl font-medium text-slate-950 tracking-tight font-serif">
+                  Featured luxury pieces
+                </h2>
+              </div>
+
+              <Link
+                href="/chairs"
+                className="flex items-center gap-2 text-xs font-black text-slate-900 hover:text-[#D4AF37] tracking-widest uppercase transition"
+              >
+                <span>View All Collections</span>
+                <ArrowRight className="w-4 h-4 text-[#D4AF37]" />
+              </Link>
             </div>
-            <div>
-              <span className="text-[10px] font-black text-[#9A7B4F] uppercase tracking-[0.25em] block">
-                SISTER LUXURY VENUE • AICC CMC
-              </span>
-              <h3 className="text-xl sm:text-2xl font-serif font-bold text-slate-950">
-                Visiting Our CMC Showroom? Experience Gorgeous Restaurant
-              </h3>
-              <p className="text-xs text-slate-700 font-light mt-1 max-w-2xl">
-                Located directly opposite our CMC Tsehay showroom inside the Addis International Convention Center (AICC). Enjoy fine European fusion plates, Awaze Beef Chikina Tibs, and romantic luxury ambiance.
-              </p>
+
+            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 sm:gap-8">
+              {featuredProducts.map((product) => (
+                <ProductCard key={product.id} product={product} />
+              ))}
             </div>
           </div>
-
-          <a
-            href="https://wa.me/251911234567?text=Hi%20Gorgeous%20Restaurant!%20I'd%20like%20to%20reserve%20a%20table."
-            target="_blank"
-            rel="noopener noreferrer"
-            className="gold-metallic-btn px-6 py-3.5 rounded-xl text-xs font-black uppercase tracking-widest shrink-0 shadow-md"
-          >
-            Explore Table Reservations
-          </a>
         </div>
       </section>
 
-      {/* SECTION 3: CATEGORY SHOWCASE */}
-      <section className="py-20 container mx-auto px-6">
-        <div className="text-center max-w-2xl mx-auto mb-16">
-          <span className="section-kicker block mb-3">
-            Signature Product Expertise
-          </span>
-          <h2 className="text-3xl sm:text-5xl font-medium text-slate-950 tracking-tight font-serif">
-            Core luxury collections
-          </h2>
-          <div className="w-20 h-1 gold-gradient-bg mx-auto mt-4 rounded-full" />
-        </div>
-
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
-          {categories.map((cat) => (
-            <Link key={cat.name} href={cat.href} className="group flex flex-col">
-              <div className="relative h-[280px] sm:h-[420px] rounded-2xl overflow-hidden shadow-xl bg-[#0B0F17] mb-4 border border-amber-200/50 gold-card-hover">
-                <Image
-                  src={cat.img}
-                  alt={cat.name}
-                  fill
-                  className="object-cover group-hover:scale-110 opacity-95 group-hover:opacity-100 transition-all duration-700"
-                />
-                <div className="absolute inset-0 bg-gradient-to-t from-[#0B0F17] via-[#0B0F17]/30 to-transparent" />
-                
-                {cat.badge && (
-                  <span className="absolute top-4 left-4 gold-gradient-bg text-[#0B0F17] text-[9px] font-black uppercase tracking-widest px-3 py-1 rounded-full shadow-md">
-                    {cat.badge}
-                  </span>
-                )}
-
-                <div className="absolute bottom-6 left-6 right-6 text-white">
-                  <h3 className="text-base font-black tracking-wider uppercase group-hover:text-[#D4AF37] transition-colors">{cat.name}</h3>
-                  <p className="text-xs text-amber-100/80 font-light mt-1 flex items-center justify-between">
-                    <span>{cat.subtitle}</span>
-                    <ChevronRight className="w-4 h-4 text-[#D4AF37] group-hover:translate-x-1 transition-transform" />
-                  </p>
-                </div>
-              </div>
-            </Link>
-          ))}
+      {/* TESTIMONIALS (CONTAINER PANEL) */}
+      <section className="py-10 sm:py-14">
+        <div className="luxury-container">
+          <div className="text-center max-w-2xl mx-auto mb-10 sm:mb-12">
+            <span className="section-kicker block mb-2 sm:mb-3">Homes across Addis</span>
+            <h2 className="text-3xl sm:text-4xl md:text-5xl font-medium font-serif text-slate-950">Loved in villas, apartments & hotels</h2>
+            <div className="w-16 h-1 gold-gradient-bg mx-auto mt-4 rounded-full" />
+          </div>
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+            {[
+              { quote: 'The CMC showroom let us sit, recline, and choose velvet that actually matched our living room light.', name: 'Hanna M.', place: 'Bole villa' },
+              { quote: 'Our king bedroom package arrived fully coordinated — wardrobe, vanity, and nightstands felt like one design.', name: 'Yonas K.', place: 'Kazanchis apartment' },
+              { quote: 'The marble dining set is the piece guests always ask about. Delivery to Gerji was careful and on time.', name: 'Selam T.', place: 'Gerji' },
+            ].map((t) => (
+              <blockquote key={t.name} className="container-panel p-8 flex flex-col justify-between">
+                <p className="text-slate-700 font-serif text-lg leading-relaxed italic">“{t.quote}”</p>
+                <p className="mt-6 pt-4 border-t border-[#eadfcb] text-xs uppercase tracking-[0.16em] text-[#8c6d2a] font-bold">
+                  {t.name} · {t.place}
+                </p>
+              </blockquote>
+            ))}
+          </div>
         </div>
       </section>
 
-      {/* SECTION 4: BESPOKE CUSTOMIZATION STUDIO BANNER */}
-      <section className="py-20 bg-white border-y border-amber-200/60">
-        <div className="container mx-auto px-4 sm:px-6 md:px-12">
-          <div className="flex flex-col lg:flex-row items-center gap-8 sm:gap-12 bg-gradient-to-br from-[#0B0F17] via-[#141923] to-[#0B0F17] p-6 sm:p-8 md:p-14 rounded-2xl sm:rounded-3xl text-white shadow-2xl border border-[#D4AF37]/40 relative overflow-hidden">
-            
-            <div className="lg:w-3/5 space-y-6 relative z-10">
-              <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-[#D4AF37]/20 text-[#D4AF37] border border-[#D4AF37]/50 text-xs font-black uppercase tracking-widest">
-                <Scissors className="w-4 h-4 text-[#D4AF37]" />
-                <span>Bespoke Material & Floor Plan Service</span>
-              </div>
-
-              <h2 className="text-2xl sm:text-3xl md:text-5xl font-serif font-bold gold-gradient-text-soft leading-tight">
-                Tailor-Made Dimensions & Fabric Swatches
-              </h2>
-
-              <p className="text-amber-100/80 text-xs sm:text-sm font-light leading-relaxed">
-                Gorgeous Furniture is renowned across Addis Ababa for its bespoke customization. Choose exact couch dimensions, L-shape orientations, and over <strong className="text-white">50+ luxury fabric & leather color options</strong> tailored to your specific villa or apartment floor plan.
-              </p>
-
-              <div className="grid grid-cols-2 sm:grid-cols-3 gap-4 pt-4 border-t border-amber-900/40 text-xs">
-                <div className="flex items-center gap-2">
-                  <CheckCircle2 className="w-4 h-4 text-[#D4AF37]" />
-                  <span>Custom Sofa Lengths</span>
-                </div>
-                <div className="flex items-center gap-2">
-                  <CheckCircle2 className="w-4 h-4 text-[#D4AF37]" />
-                  <span>50+ Velvet & Leather Swatches</span>
-                </div>
-                <div className="flex items-center gap-2">
-                  <CheckCircle2 className="w-4 h-4 text-[#D4AF37]" />
-                  <span>Floor Plan Fitting Guarantee</span>
-                </div>
-              </div>
-
-              <div className="pt-4 flex flex-wrap gap-4">
-                <a
-                  href="https://wa.me/251911234567?text=Hi%20Gorgeous%20Furniture!%20I'd%20like%20to%20request%20custom%20sofa%20dimensions%20and%20fabric%20swatches%20for%20my%20home."
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="gold-metallic-btn px-8 py-4 rounded-xl text-xs font-black uppercase tracking-widest transition shadow-xl"
-                >
-                  Request Bespoke Swatches & Quote
-                </a>
-              </div>
-            </div>
-
-            <div className="lg:w-2/5 relative h-[220px] sm:h-[320px] w-full rounded-2xl overflow-hidden border border-[#D4AF37]/50 shadow-2xl">
+      {/* SECTION 7: MASSAGE CHAIR SPOTLIGHT (CONTAINER SPOTLIGHT) */}
+      <section className="py-10 sm:py-16">
+        <div className="luxury-container">
+          <div className="relative rounded-[32px] overflow-hidden min-h-[460px] flex items-center border border-amber-300/80 shadow-[0_20px_50px_rgba(26,24,20,0.08)] bg-gradient-to-r from-amber-50 via-white to-amber-50">
+            <div className="absolute inset-0 z-0">
               <Image
-                src="/king_bedroom.png"
-                alt="Bespoke Custom Furniture Studio Addis Ababa"
+                src="/massage_chair.png"
+                alt="Z600 Massage Chair Ethiopia"
                 fill
                 className="object-cover"
               />
+              <div className="absolute inset-0 bg-gradient-to-r from-[#FAF8F5] via-[#FAF8F5]/85 to-transparent" />
             </div>
 
-          </div>
-        </div>
-      </section>
-
-      {/* SECTION 5: TIKTOK VIDEO CATALOG & CONTAINER ARRIVALS */}
-      <section className="py-20 container mx-auto px-6">
-        <div className="flex flex-col md:flex-row justify-between items-start md:items-end mb-16 gap-6">
-          <div>
-            <span className="text-xs font-black text-[#D4AF37] uppercase tracking-[0.25em] flex items-center gap-2 mb-2">
-              <Video className="w-4 h-4 text-[#D4AF37]" />
-              <span>Digital Video Catalog</span>
-            </span>
-            <h2 className="text-3xl sm:text-5xl font-medium text-slate-950 tracking-tight font-serif">
-              TikTok previews & new arrivals
-            </h2>
-          </div>
-
-          <a
-            href="https://www.tiktok.com"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="gold-metallic-btn px-6 py-3 rounded-xl text-xs font-black uppercase tracking-widest flex items-center gap-2 shadow-md"
-          >
-            <span>Follow TikTok Catalog</span>
-            <Play className="w-3.5 h-3.5 fill-[#0B0F17]" />
-          </a>
-        </div>
-
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-          {tiktokCatalog.map((video) => (
-            <div key={video.id} className="bg-white rounded-2xl overflow-hidden border border-amber-200/60 shadow-lg gold-card-hover flex flex-col justify-between">
-              <div className="relative h-60 bg-[#0B0F17] overflow-hidden">
-                <Image
-                  src={video.img}
-                  alt={video.title}
-                  fill
-                  className="object-cover opacity-95 hover:scale-105 transition-transform duration-500"
-                />
-                <div className="absolute inset-0 bg-gradient-to-t from-[#0B0F17] via-transparent to-transparent" />
-                
-                <span className="absolute top-3 right-3 bg-[#0B0F17]/90 text-[#D4AF37] text-[10px] font-bold px-2.5 py-1 rounded-full border border-[#D4AF37]/40">
-                  {video.duration}
+            <div className="relative z-10 p-6 sm:p-10 md:p-14 max-w-2xl">
+              <div className="bg-white/95 backdrop-blur-xl p-6 sm:p-8 rounded-3xl border border-amber-300/70 shadow-xl text-slate-900">
+                <span className="text-xs font-black text-[#9A7B4F] uppercase tracking-widest flex items-center gap-2 mb-3">
+                  <Sparkles className="w-4 h-4 text-[#D4AF37] animate-spin" style={{ animationDuration: '4s' }} />
+                  <span>Full-Body Relaxation Technology</span>
                 </span>
 
-                <div className="absolute inset-0 flex items-center justify-center">
-                  <div className="w-12 h-12 rounded-full bg-[#D4AF37]/90 text-[#0B0F17] flex items-center justify-center shadow-2xl transform hover:scale-110 transition">
-                    <Play className="w-5 h-5 fill-[#0B0F17] ml-0.5" />
-                  </div>
+                <h2 className="text-2xl sm:text-3xl md:text-4xl font-serif font-medium text-slate-950 mb-3">
+                  Z600 Britanica <br />
+                  <span className="gold-gradient-text italic font-serif">Zero Gravity Massage Chair</span>
+                </h2>
+
+                <p className="text-slate-700 text-xs sm:text-sm font-light leading-relaxed mb-6">
+                  Experience the pinnacle of wellness tech in Addis Ababa. Featuring intelligent pressure rollers, lumbar heating, bluetooth speakers, and weightless zero-gravity recline modes.
+                </p>
+
+                <div className="flex flex-col sm:flex-row items-stretch sm:items-center gap-3 sm:gap-4">
+                  <button
+                    onClick={() =>
+                      setQuickViewProduct({
+                        id: 'z600-massage-chair',
+                        name: 'Z600 Britanica Zero Gravity Massage Chair',
+                        price: 145000,
+                        img: '/massage_chair.png',
+                        category: 'Massage Chairs',
+                        description: 'Equipped with zero gravity positioning, Bluetooth sound system, lumbar heating, and smart pressure sensors for tailor-made full body relief in Addis Ababa.',
+                      })
+                    }
+                    className="gold-metallic-btn px-6 sm:px-8 py-3.5 rounded-full text-[11px] sm:text-xs font-black uppercase tracking-widest shadow-xl text-center"
+                  >
+                    Inquire & Order (ETB 145,000)
+                  </button>
+
+                  <a
+                    href="https://wa.me/251940510000?text=Hi%20Gorgeous%20Furniture%20Ethiopia!%20I'd%20like%20to%20inquire%20about%20the%20Z600%20Massage%20Chair."
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="bg-[#25D366] hover:bg-[#20ba5a] text-white px-5 sm:px-6 py-3.5 rounded-full font-bold text-[11px] sm:text-xs capitalize tracking-wider transition flex items-center justify-center gap-2 shadow-md"
+                  >
+                    <WhatsAppIcon className="w-4 h-4 fill-white" />
+                    <span>WhatsApp (0909794287)</span>
+                  </a>
                 </div>
               </div>
-
-              <div className="p-6 space-y-2">
-                <span className="text-[10px] font-extrabold text-[#D4AF37] uppercase tracking-wider block">
-                  {video.views} • TikTok Video Preview
-                </span>
-                <h4 className="text-sm font-extrabold text-slate-950 font-serif leading-snug">{video.title}</h4>
-                <p className="text-xs text-slate-600 font-light leading-relaxed">{video.desc}</p>
-              </div>
-            </div>
-          ))}
-        </div>
-      </section>
-
-      {/* SECTION 6: FEATURED PRODUCTS GRID */}
-      <section className="py-20 bg-amber-50/30 border-t border-amber-200/50 container mx-auto px-6 rounded-3xl my-8">
-        <div className="flex flex-col md:flex-row justify-between items-start md:items-end mb-16 gap-6">
-          <div>
-            <span className="text-xs font-black text-[#D4AF37] uppercase tracking-[0.25em] block mb-2">
-              Showroom Best Sellers
-            </span>
-            <h2 className="text-3xl sm:text-5xl font-medium text-slate-950 tracking-tight font-serif">
-              Featured luxury pieces
-            </h2>
-          </div>
-
-          <Link
-            href="/chairs"
-            className="flex items-center gap-2 text-xs font-black text-slate-900 hover:text-[#D4AF37] tracking-widest uppercase transition"
-          >
-            <span>View All Collections</span>
-            <ArrowRight className="w-4 h-4 text-[#D4AF37]" />
-          </Link>
-        </div>
-
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
-          {featuredProducts.map((product) => (
-            <ProductCard key={product.id} product={product} />
-          ))}
-        </div>
-      </section>
-
-      {/* TESTIMONIALS */}
-      <section className="py-20 container mx-auto px-6">
-        <div className="text-center max-w-2xl mx-auto mb-14">
-          <span className="section-kicker block mb-3">Homes across Addis</span>
-          <h2 className="text-3xl sm:text-5xl font-medium font-serif text-slate-950">Loved in villas, apartments & hotels</h2>
-        </div>
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-          {[
-            { quote: 'The CMC showroom let us sit, recline, and choose velvet that actually matched our living room light.', name: 'Hanna M.', place: 'Bole villa' },
-            { quote: 'Our king bedroom package arrived fully coordinated — wardrobe, vanity, and nightstands felt like one design.', name: 'Yonas K.', place: 'Kazanchis apartment' },
-            { quote: 'The marble dining set is the piece guests always ask about. Delivery to Gerji was careful and on time.', name: 'Selam T.', place: 'Gerji' },
-          ].map((t) => (
-            <blockquote key={t.name} className="p-8 rounded-[22px] bg-white border border-[#eadfcb] shadow-[0_12px_30px_rgba(26,24,20,0.05)]">
-              <p className="text-slate-700 font-serif text-lg leading-relaxed italic">“{t.quote}”</p>
-              <p className="mt-6 pt-4 border-t border-[#eadfcb] text-xs uppercase tracking-[0.16em] text-[#8c6d2a] font-semibold">
-                {t.name} · {t.place}
-              </p>
-            </blockquote>
-          ))}
-        </div>
-      </section>
-
-      {/* SECTION 7: MASSAGE CHAIR SPOTLIGHT */}
-      <section className="relative py-28 flex items-center justify-center bg-gradient-to-r from-amber-50 via-white to-amber-50 overflow-hidden border-t border-amber-200">
-        <div className="absolute inset-0 z-0">
-          <Image
-            src="/massage_chair.png"
-            alt="Z600 Massage Chair Ethiopia"
-            fill
-            className="object-cover opacity-100"
-          />
-          <div className="absolute inset-0 bg-gradient-to-r from-[#FAF8F5] via-[#FAF8F5]/80 to-transparent" />
-        </div>
-
-        <div className="relative z-10 container mx-auto px-6 flex justify-start">
-          <div className="max-w-2xl bg-white/95 backdrop-blur-xl p-6 sm:p-8 md:p-12 rounded-2xl sm:rounded-3xl border border-amber-300 shadow-xl text-slate-900">
-            <span className="text-xs font-black text-[#9A7B4F] uppercase tracking-widest flex items-center gap-2 mb-3">
-              <Sparkles className="w-4 h-4 text-[#D4AF37] animate-spin" style={{ animationDuration: '4s' }} />
-              <span>Full-Body Relaxation Technology</span>
-            </span>
-
-            <h2 className="text-2xl sm:text-3xl md:text-5xl font-serif font-medium text-slate-950 mb-4">
-              Z600 Britanica <br />
-              <span className="gold-gradient-text italic font-serif">Zero Gravity Massage Chair</span>
-            </h2>
-
-            <p className="text-slate-700 text-xs sm:text-sm font-light leading-relaxed mb-6">
-              Experience the pinnacle of wellness tech in Addis Ababa. Featuring intelligent pressure rollers, lumbar heating, bluetooth speakers, and weightless zero-gravity recline modes.
-            </p>
-
-            <div className="flex flex-col sm:flex-row items-stretch sm:items-center gap-3 sm:gap-4">
-              <button
-                onClick={() =>
-                  setQuickViewProduct({
-                    id: 'z600-massage-chair',
-                    name: 'Z600 Britanica Zero Gravity Massage Chair',
-                    price: 145000,
-                    img: '/massage_chair.png',
-                    category: 'Massage Chairs',
-                    description: 'Equipped with zero gravity positioning, Bluetooth sound system, lumbar heating, and smart pressure sensors for tailor-made full body relief in Addis Ababa.',
-                  })
-                }
-                className="gold-metallic-btn px-6 sm:px-8 py-3.5 sm:py-4 rounded-xl text-[11px] sm:text-xs font-black uppercase tracking-widest shadow-xl text-center"
-              >
-                Inquire & Order (ETB 145,000)
-              </button>
-
-              <a
-                href="https://wa.me/251940510000?text=Hi%20Gorgeous%20Furniture%20Ethiopia!%20I'd%20like%20to%20inquire%20about%20the%20Z600%20Massage%20Chair."
-                target="_blank"
-                rel="noopener noreferrer"
-                className="bg-[#25D366] hover:bg-[#20ba5a] text-white px-5 sm:px-6 py-3.5 sm:py-4 rounded-xl font-bold text-[11px] sm:text-xs capitalize tracking-wider transition flex items-center justify-center gap-2 shadow-md"
-              >
-                <WhatsAppIcon className="w-4 h-4 fill-white" />
-                <span>WhatsApp (0909794287)</span>
-              </a>
             </div>
           </div>
         </div>
