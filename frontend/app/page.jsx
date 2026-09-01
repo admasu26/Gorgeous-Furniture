@@ -157,16 +157,21 @@ export default function Home() {
     <main className="min-h-screen bg-[#f7f3ec] text-slate-900 font-sans">
 
       {/* HERO BANNER — full-width, edge-to-edge */}
-      <section className="relative min-h-[72vh] flex items-end bg-[#0B0F17] overflow-hidden">
+      <section className="relative min-h-[72vh] flex items-end overflow-hidden bg-[#0B0F17]">
         <div className="absolute inset-0 z-0">
-          <Image
-            src="/hero_recliner.png"
-            alt="Luxury Recliner Living Room Ethiopia"
-            fill
-            priority
-            className="object-cover hero-kenburns"
-          />
-          <div className="absolute inset-0 bg-gradient-to-r from-[#0B0F17] via-[#0B0F17]/70 to-[#0B0F17]/20" />
+          <video
+            autoPlay
+            loop
+            muted
+            playsInline
+            preload="auto"
+            className="h-full w-full object-cover object-center scale-105 hero-kenburns"
+          >
+            <source src="/images/GF.mp4" type="video/mp4" />
+            Your browser does not support the video tag.
+          </video>
+
+          <div className="absolute inset-0 bg-gradient-to-r from-[#0B0F17] via-[#0B0F17]/65 to-[#0B0F17]/20" />
           <div className="absolute inset-0 bg-gradient-to-t from-[#0B0F17] via-transparent to-[#0B0F17]/25" />
         </div>
 
@@ -386,12 +391,17 @@ export default function Home() {
               </a>
             </div>
             <div className="lg:w-2/5 relative h-[300px] sm:h-[400px] w-full rounded-2xl overflow-hidden border border-[#D4AF37]/30 shadow-2xl">
-              <Image
-                src="/king_bedroom.png"
-                alt="Bespoke Custom Furniture Studio Addis Ababa"
-                fill
-                className="object-cover"
-              />
+              <video
+            autoPlay
+            loop
+            muted
+            playsInline
+            preload="auto"
+            className="h-full w-full object-cover object-center scale-105 hero-kenburns"
+          >
+            <source src="/images/GF.mp4" type="video/mp4" />
+            Your browser does not support the video tag.
+          </video>
             </div>
           </div>
         </div>
