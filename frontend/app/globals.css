@@ -32,6 +32,11 @@
     overflow-x: hidden;
   }
 
+  img {
+    box-shadow: none !important;
+    filter: none !important;
+  }
+
   ::selection {
     background-color: #c9a227;
     color: #0b0f17;
