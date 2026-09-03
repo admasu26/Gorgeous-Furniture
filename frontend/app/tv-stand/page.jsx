@@ -4,14 +4,10 @@ import React, { useState } from 'react';
 import Image from 'next/image';
 import ProductCard from '../components/ProductCard';
 import { useShop } from '../components/ShopContext';
+import { TV_PRODUCTS as tvProducts } from '../utils/products';
 import { Sparkles, ArrowUpDown } from 'lucide-react';
 
-const tvProducts = [
-  { id: 'marble-tv-unit', name: 'Calacatta Marble Top Media Console (2.2m)', price: 55000, img: '/images/Table1.png', badge: 'POPULAR', category: 'TV Units', description: 'White marble top media unit with soft-closing drawers and gold stainless trim.' },
-  { id: 'gold-coffee-table-set', name: 'Luxury Gold & Slate Nesting Coffee Tables', price: 28000, img: '/images/Table2.png', badge: 'BESTSELLER', category: 'Coffee Tables', description: 'Set of 2 nesting round tables with sintered stone top and champagne gold base.' },
-  { id: 'fluted-wood-tv-stand', name: 'Nordic Fluted Oak TV Stand Console', price: 42000, img: '/images/Table3.png', badge: 'NEW', category: 'TV Units', description: 'Tambour door fluted wood TV unit with cable management ports.' },
-  { id: 'glass-coffee-table', name: 'Tempered Glass & Brass Coffee Table', price: 22000, img: '/images/Table1.png', badge: 'CLASSIC', category: 'Coffee Tables', description: 'Heavy-duty tempered glass shelf with architectural geometric brass frame.' },
-];
+
 
 export default function TvStandPage() {
   const [sortOrder, setSortOrder] = useState('DEFAULT');

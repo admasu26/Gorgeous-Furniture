@@ -4,46 +4,11 @@ import React, { useMemo, useState } from 'react';
 import Image from 'next/image';
 import ProductCard from '../components/ProductCard';
 import { useShop } from '../components/ShopContext';
+import { DINING_PRODUCTS as DINING_PRODUCTS_DATA } from '../utils/products';
 import { ArrowUpDown, Flame, SlidersHorizontal } from 'lucide-react';
 
-const DINING_PRODUCTS = [
-  {
-    id: 'royal-oval-table',
-    name: 'Royal Oval Dining Table',
-    price: 168000,
-    img: '/images/Table1.png',
-    badge: 'BESTSELLER',
-    category: 'Dining Sets',
-    description: 'Statement oval centerpiece finished in warm walnut with luxe seating comfort.',
-  },
-  {
-    id: 'harbor-extension-table',
-    name: 'Harbor 8-Seater Dining Table',
-    price: 197000,
-    img: '/images/Table2.png',
-    badge: 'PREMIUM',
-    category: 'Dining Tables',
-    description: 'Extended family-ready dining experience with premium solid wood detailing.',
-  },
-  {
-    id: 'elegance-dining-suite',
-    name: 'Elegance Dining Suite',
-    price: 139000,
-    img: '/images/Dinning%20table%201.png',
-    badge: 'NEW',
-    category: 'Dining Suites',
-    description: 'Sophisticated mix of soft curves and modern comfort for upscale homes.',
-  },
-  {
-    id: 'heritage-wood-chair-set',
-    name: 'Heritage Wood Chair Set',
-    price: 84000,
-    img: '/images/Dinning%20table%202.png',
-    badge: 'TRENDING',
-    category: 'Dining Chairs',
-    description: 'Hand-finished hardwood chairs crafted for elegant daily dining.',
-  },
-];
+const DINING_PRODUCTS = DINING_PRODUCTS_DATA;
+
 
 export default function DiningRoomPage() {
   const [sortOrder, setSortOrder] = useState('DEFAULT');

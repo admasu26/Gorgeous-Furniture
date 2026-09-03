@@ -4,18 +4,10 @@ import React, { useState } from 'react';
 import Image from 'next/image';
 import ProductCard from '../components/ProductCard';
 import { useShop } from '../components/ShopContext';
+import { CHAIRS_PRODUCTS as initialProducts } from '../utils/products';
 import { SlidersHorizontal, Armchair, ArrowUpDown } from 'lucide-react';
 
-const initialProducts = [
-  { id: 'orissa-chair', name: 'Orissa Velvet Dining Chair (Set of 2)', price: 18500, img: '/marble_dining.png', badge: 'POPULAR', category: 'Dining Chairs', description: 'Curved velvet backrest with stainless steel legs.' },
-  { id: 'velvet-bar-stool', name: 'Velvet Counter Bar Stool - Gold Legs', price: 12500, img: '/images/Chair1.png', badge: 'BESTSELLER', category: 'Bar Stools', description: 'Ergonomic high-back bar stool with polished gold chrome frame.' },
-  { id: 'shell-occasional-chair', name: 'Shell Velvet Occasional Armchair', price: 24500, img: '/images/Chair2.png', badge: 'NEW', category: 'Occasional Chairs', description: 'Scalloped backshell design in deep emerald or plush grey.' },
-  { id: 'woven-patio-chair-set', name: 'Woven Outdoor Patio Chair Set', price: 28500, img: '/images/Chair1.png', badge: 'PATIO', category: 'Outdoor Seating', description: 'Weather-resistant synthetic rattan dining chairs with memory foam cushions.' },
-  { id: 'nordic-armchair', name: 'Modern Nordic Oak Armchair', price: 19500, img: '/images/Chair2.png', badge: 'HOT', category: 'Lounge Chairs', description: 'Minimalist solid oak wood frame with woven beige upholstery.' },
-  { id: 'swivel-vanity-chair', name: 'Luxury Swivel Velvet Vanity Chair', price: 16500, img: '/images/Chair1.png', badge: 'TRENDING', category: 'Vanity Seating', description: '360-degree smooth swivel mechanism with gold base.' },
-  { id: 'industrial-counter-stool', name: 'Industrial Leather Counter Stool', price: 11500, img: '/images/Chair2.png', badge: 'CLASSIC', category: 'Bar Stools', description: 'Rustic dark leather padded seat on matte black steel legs.' },
-  { id: 'boucle-lounge-chair', name: 'Bouclé Cozy Accent Lounge Chair', price: 32500, img: '/images/Chair1.png', badge: 'LUXURY', category: 'Lounge Chairs', description: 'Plush cream bouclé textured cloud chair.' },
-];
+
 
 export default function ChairsPage() {
   const [sortOrder, setSortOrder] = useState('DEFAULT');

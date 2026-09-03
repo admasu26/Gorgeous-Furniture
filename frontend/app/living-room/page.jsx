@@ -4,46 +4,10 @@ import React, { useState, useMemo } from 'react';
 import Image from 'next/image';
 import ProductCard from '../components/ProductCard';
 import { useShop } from '../components/ShopContext';
+import { LIVING_PRODUCTS } from '../utils/products';
 import { Flame, ArrowUpDown, SlidersHorizontal } from 'lucide-react';
 
-const LIVING_PRODUCTS = [
-  {
-    id: 'enfriador-lounge-suite',
-    name: 'Enfriador 3-Piece Lounge Suite with Bar Fridge',
-    price: 115000,
-    img: '/hero_recliner.png',
-    badge: 'BESTSELLER',
-    category: 'Lounge Suites',
-    description: 'Includes built-in bar fridge, cup holders, reclining seats, and USB charging.',
-  },
-  {
-    id: 'z600-massage-chair',
-    name: 'Z600 Britanica Zero Gravity Massage Chair',
-    price: 145000,
-    img: '/massage_chair.png',
-    badge: 'FLAGSHIP',
-    category: 'Massage Chairs',
-    description: 'Zero-gravity positioning with Bluetooth sound system & heating.',
-  },
-  {
-    id: 'smart-power-recliner',
-    name: 'Smart Power Motion Recliner 3-Seater Sofa',
-    price: 95000,
-    img: '/images/Sofa3.png',
-    badge: 'NEW',
-    category: 'Recliners',
-    description: 'Electronic push-button recline with adjustable lumbar support.',
-  },
-  {
-    id: 'modular-l-shape-sofa',
-    name: 'Modular Corner Velvet L-Shape Sectional',
-    price: 88000,
-    img: '/images/Sofa4.png',
-    badge: 'TRENDING',
-    category: 'Sectionals',
-    description: 'Ultra-deep seating with reversible chaise and feather-down cushions.',
-  },
-];
+
 
 export default function LivingRoomPage() {
   const [sortOrder, setSortOrder] = useState('DEFAULT');

@@ -4,46 +4,10 @@ import React, { useState } from 'react';
 import Image from 'next/image';
 import ProductCard from '../components/ProductCard';
 import { useShop } from '../components/ShopContext';
+import { BEDROOM_PRODUCTS as bedroomProducts } from '../utils/products';
 import { Sparkles, BedDouble, ShieldCheck, Truck, Palette } from 'lucide-react';
 
-const bedroomProducts = [
-  {
-    id: 'emperor-king-bedroom-suite',
-    name: 'Emperor Royal Tufted King Bedroom Package',
-    price: 185000,
-    img: '/king_bedroom.png',
-    badge: 'FLAGSHIP',
-    category: 'King Bedroom Package',
-    description: 'Includes a grand velvet tufted king bedframe, 2 marble-top nightstands, 6-door fitted wardrobe, and luxury dresser vanity.',
-  },
-  {
-    id: 'nordic-velvet-bedroom-set',
-    name: 'Nordic Velvet King Bed & Wardrobe Package',
-    price: 165000,
-    img: '/king_bedroom.png',
-    badge: 'BESTSELLER',
-    category: 'King Bedroom Package',
-    description: 'Ergonomic plush wingback king bedframe with matching 4-drawer dresser and soft-closing bedside tables.',
-  },
-  {
-    id: 'modern-floating-bed-package',
-    name: 'Modern Ambient LED Floating King Bed Suite',
-    price: 155000,
-    img: '/images/bed2.png',
-    badge: 'NEW ARRIVAL',
-    category: 'King Bedroom Package',
-    description: 'Floating platform king bed with built-in ambient LED headboard lighting, wireless phone chargers, and dual nightstands.',
-  },
-  {
-    id: 'bespoke-leather-bedroom-set',
-    name: 'Bespoke Genuine Leather Executive Bedroom Set',
-    price: 195000,
-    img: '/images/bed3.png',
-    badge: 'CUSTOMIZABLE',
-    category: 'King Bedroom Package',
-    description: 'Upholstered in Italian grain leather with solid oak frame, custom mattress support, and full vanity mirror.',
-  },
-];
+
 
 export default function BedroomPage() {
   const [sortOrder, setSortOrder] = useState('DEFAULT');

@@ -3,7 +3,7 @@
 import React, { useState } from 'react';
 import Link from 'next/link';
 import Image from 'next/image';
-import { usePathname } from 'next/navigation';
+import { usePathname, useRouter } from 'next/navigation';
 import { useShop } from './ShopContext';
 import {
   Search,
@@ -37,9 +37,23 @@ const navLinks = [
 export default function Navbar() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
   const pathname = usePathname();
+  const router = useRouter();
   const { cartCount, wishlist, setIsCartOpen, searchQuery, setSearchQuery } = useShop();
 
   const isCurrent = (path) => pathname === path;
+
+  const handleSearch = (e) => {
+    if (e) e.preventDefault();
+    if (searchQuery.trim()) {
+      router.push(`/search?q=${encodeURIComponent(searchQuery.trim())}`);
+    } else {
+      router.push('/search');
+    }
+  };
+
+  const handleSearchKeyDown = (e) => {
+    if (e.key === 'Enter') handleSearch();
+  };
 
   // Split links into logical sections for the mobile list view
   const categoryLinks = navLinks.slice(1, 6);
@@ -125,9 +139,16 @@ export default function Navbar() {
               placeholder="Search couches, dining tables, massage chairs..."
               value={searchQuery}
               onChange={(e) => setSearchQuery(e.target.value)}
+              onKeyDown={handleSearchKeyDown}
               className="w-full bg-[#f7f3ec] border border-[#d9ccb2] rounded-full py-2 pl-4 pr-10 text-xs font-medium text-slate-900 placeholder:text-slate-500 focus:outline-none focus:border-[#c9a227] focus:ring-2 focus:ring-[#c9a227]/20 transition shadow-inner"
             />
-            <Search className="absolute right-3.5 top-2.5 w-4 h-4 text-slate-400" />
+            <button
+              onClick={handleSearch}
+              className="absolute right-3 top-2 p-0.5 hover:text-[#D4AF37] transition"
+              aria-label="Search"
+            >
+              <Search className="w-4 h-4 text-slate-400 hover:text-[#D4AF37] transition" />
+            </button>
           </div>
 
           {/* ICONS & ACTIONS (Desktop & Tablet) */}
@@ -147,11 +168,11 @@ export default function Navbar() {
 
             {/* Wishlist Icon */}
             <Link
-              href="/chairs"
+              href="/wishlist"
               className="relative p-2 text-slate-700 hover:text-[#D4AF37] transition group hidden sm:flex"
               title="Wishlist"
             >
-              <Heart className="w-5 h-5 group-hover:scale-110 transition-transform" />
+              <Heart className={`w-5 h-5 group-hover:scale-110 transition-transform ${wishlist.length > 0 ? 'fill-rose-500 text-rose-500' : ''}`} />
               {wishlist.length > 0 && (
                 <span className="absolute top-0 right-0 w-4 h-4 bg-gradient-to-r from-[#D4AF37] to-[#AA771C] text-[#0B0F17] rounded-full text-[9px] font-black flex items-center justify-center shadow-md">
                   {wishlist.length}
@@ -237,9 +258,21 @@ export default function Navbar() {
                   placeholder="Search furniture collection..."
                   value={searchQuery}
                   onChange={(e) => setSearchQuery(e.target.value)}
-                  className="w-full bg-[#EFEFF4] border-none rounded-xl py-2.5 pl-9 pr-4 text-sm text-slate-900 placeholder:text-slate-400 focus:outline-none focus:ring-2 focus:ring-[#8c6d2a]/30"
+                  onKeyDown={(e) => {
+                    if (e.key === 'Enter') {
+                      setMobileMenuOpen(false);
+                      handleSearch();
+                    }
+                  }}
+                  className="w-full bg-[#EFEFF4] border-none rounded-xl py-2.5 pl-9 pr-12 text-sm text-slate-900 placeholder:text-slate-400 focus:outline-none focus:ring-2 focus:ring-[#8c6d2a]/30"
                 />
                 <Search className="w-4 h-4 text-slate-400 absolute left-3 top-3" />
+                <button
+                  onClick={() => { setMobileMenuOpen(false); handleSearch(); }}
+                  className="absolute right-3 top-2 p-0.5 text-[#8c6d2a] font-bold text-xs"
+                >
+                  Go
+                </button>
               </div>
             </div>
 
@@ -350,12 +383,12 @@ export default function Navbar() {
         </button>
 
         <Link
-          href="/chairs"
+          href="/wishlist"
           className={`flex flex-col items-center justify-center w-16 py-1 relative ${
-            isCurrent('/chairs') ? 'text-[#8c6d2a]' : 'text-slate-500'
+            isCurrent('/wishlist') ? 'text-[#8c6d2a]' : 'text-slate-500'
           }`}
         >
-          <Heart className="w-5 h-5" />
+          <Heart className={`w-5 h-5 ${wishlist.length > 0 ? 'fill-rose-500 text-rose-500' : ''}`} />
           {wishlist.length > 0 && (
             <span className="absolute top-0 right-3 w-3.5 h-3.5 bg-[#8c6d2a] text-white rounded-full text-[8px] font-bold flex items-center justify-center">
               {wishlist.length}
