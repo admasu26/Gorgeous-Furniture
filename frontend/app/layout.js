@@ -3,8 +3,10 @@ import { Cormorant_Garamond, Outfit } from "next/font/google";
 import Navbar from "./components/navbar";
 import Footer from "./components/Footer";
 import FloatingWhatsApp from "./components/FloatingWhatsApp";
+import FloatingChatbot from "./components/FloatingChatbot";
 import CartDrawer from "./components/CartDrawer";
 import ProductQuickViewModal from "./components/ProductQuickViewModal";
+import TawkMessenger from "./components/TawkMessenger";
 import { ShopProvider } from "./components/ShopContext";
 
 const display = Cormorant_Garamond({
@@ -41,9 +43,11 @@ export default function RootLayout({ children }) {
             {children}
           </div>
           <Footer />
+          <FloatingChatbot />
           <FloatingWhatsApp />
           <CartDrawer />
           <ProductQuickViewModal />
+          <TawkMessenger />
         </ShopProvider>
       </body>
     </html>

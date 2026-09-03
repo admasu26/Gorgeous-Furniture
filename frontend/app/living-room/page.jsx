@@ -69,10 +69,8 @@ export default function LivingRoomPage() {
   return (
     <main className="min-h-screen bg-[#f7f3ec] text-slate-900 font-sans pb-24">
       
-      {/* HERO BANNER SECTION (BRIGHT & CLEAR FURNITURE DISPLAY) */}
-      <section className="relative overflow-hidden bg-slate-950 py-16 sm:py-24 md:py-28">
-        
-        {/* Background Image & Lightened Overlay */}
+      {/* HERO BANNER SECTION (BOLD WHITE DISPLAY) */}
+      <section className="relative overflow-hidden bg-[#0B0F17] py-16 sm:py-24 md:py-28 text-center text-white">
         <div className="absolute inset-0 z-0 select-none pointer-events-none">
           <Image
             src="/images/Sofa1.png"
@@ -80,35 +78,27 @@ export default function LivingRoomPage() {
             fill
             priority
             sizes="100vw"
-            className="object-cover object-center opacity-85 scale-100 transition-all duration-700"
+            className="object-cover object-center opacity-80 scale-100 transition-all duration-700 brightness-90"
           />
-          {/* Subtle vignette and bottom gradient to keep text readable while showing furniture clearly */}
-          <div className="absolute inset-0 bg-gradient-to-t from-[#0B0F17] via-[#0B0F17]/30 to-[#0B0F17]/15" />
+          <div className="absolute inset-0 bg-gradient-to-t from-[#0B0F17] via-[#0B0F17]/60 to-[#0B0F17]/30" />
         </div>
 
-        {/* Hero Text Box */}
-        <div className="relative z-10 luxury-container px-4 sm:px-6 text-center">
-          <div className="max-w-3xl mx-auto flex flex-col items-center">
-            
-            {/* Category Tag */}
-            <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-slate-900/60 text-[#E8D5A3] border border-[#D4AF37]/60 text-[11px] font-extrabold uppercase tracking-widest backdrop-blur-md shadow-lg mb-4">
-              <Flame className="w-4 h-4 text-[#D4AF37] animate-pulse" />
-              <span>Living Room & Smart Recliners</span>
-            </div>
-
-            {/* Title */}
-            <h1 className="text-3xl sm:text-5xl md:text-6xl font-serif font-bold tracking-tight text-white drop-shadow-md leading-tight">
-              Smart Recliners
-              <span className="block mt-1 gold-gradient-text italic font-serif text-2xl sm:text-4xl md:text-5xl font-normal">
-                & Luxury Lounge Suites
-              </span>
-            </h1>
-
-            {/* Description */}
-            <p className="text-amber-50 text-xs sm:text-base mt-4 max-w-xl mx-auto font-normal leading-relaxed tracking-wide drop-shadow-[0_2px_4px_rgba(0,0,0,0.8)]">
-              Experience ultimate home comfort — bar-fridge lounges, zero-gravity massage technology, and modular velvet sectionals designed for elegant Addis Ababa residences.
-            </p>
+        <div className="relative z-10 max-w-4xl mx-auto px-4 sm:px-6 flex flex-col items-center">
+          <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-black/60 text-[#E8D5A3] border border-[#D4AF37]/60 text-[11px] font-black uppercase tracking-[0.35em] backdrop-blur-md shadow-2xl mb-3">
+            <Flame className="w-4 h-4 text-[#D4AF37] animate-pulse" />
+            <span>L I V I N G   R O O M</span>
           </div>
+
+          <h1 className="text-4xl sm:text-6xl md:text-7xl lg:text-8xl font-black uppercase tracking-tight text-white drop-shadow-[0_4px_16px_rgba(0,0,0,0.95)] leading-none my-2">
+            YOUR DREAM
+            <span className="block mt-2 font-serif text-3xl sm:text-5xl md:text-6xl italic font-light text-amber-100 drop-shadow-md capitalize">
+              Smart Recliners &amp; Lounge Suites
+            </span>
+          </h1>
+
+          <p className="text-white text-xs sm:text-base md:text-lg mt-3 max-w-2xl mx-auto font-medium leading-relaxed drop-shadow-[0_2px_8px_rgba(0,0,0,0.95)]">
+            Experience ultimate home comfort — bar-fridge lounges, zero-gravity massage technology, and modular velvet sectionals designed for elegant Addis Ababa residences.
+          </p>
         </div>
       </section>
 

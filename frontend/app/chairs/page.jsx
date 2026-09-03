@@ -35,35 +35,36 @@ export default function ChairsPage() {
   return (
     <main className="min-h-screen bg-[#f7f3ec] text-slate-900 font-sans pb-16">
       
-      {/* HEADER BANNER (FRAMED CONTAINER LAYOUT) */}
-      <section>
-        <div className="w-full">
-          <div className="relative min-h-screen flex items-center text-white text-center overflow-hidden bg-[#0B0F17]">
-            <div className="absolute inset-0 z-0">
-              <Image
-                src="/images/chairs_header.jpg"
-                alt="Designer Chairs & Bar Stools Header"
-                fill
-                priority
-                className="object-cover scale-105"
-              />
-              <div className="absolute inset-0 bg-gradient-to-b from-[#0B0F17]/80 via-[#0B0F17]/65 to-[#0B0F17]/85" />
-            </div>
+      {/* HEADER BANNER (BOLD WHITE DISPLAY) */}
+      <section className="relative overflow-hidden bg-[#0B0F17] py-16 sm:py-24 md:py-28 text-center text-white">
+        <div className="absolute inset-0 z-0 select-none pointer-events-none">
+          <Image
+            src="/images/chairs_header.jpg"
+            alt="Designer Chairs & Bar Stools Header"
+            fill
+            priority
+            sizes="100vw"
+            className="object-cover object-center opacity-80 scale-100 transition-all duration-700 brightness-90"
+          />
+          <div className="absolute inset-0 bg-gradient-to-t from-[#0B0F17] via-[#0B0F17]/60 to-[#0B0F17]/30" />
+        </div>
 
-            <div className="relative z-10 px-4 sm:px-6 max-w-3xl mx-auto">
-              <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-white/10 text-[#E8D5A3] border border-[#D4AF37]/50 text-xs font-black uppercase tracking-widest mb-4 backdrop-blur-md shadow">
-                <Armchair className="w-4 h-4 text-[#D4AF37]" />
-                <span>Luxury Seating Selections</span>
-              </div>
-              <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-serif font-bold tracking-tight text-white drop-shadow-lg">
-                Designer Chairs
-                <span className="block mt-1 gold-gradient-text italic font-serif text-2xl sm:text-3xl md:text-4xl font-normal">& Premium Bar Stools</span>
-              </h1>
-              <p className="text-amber-100/90 text-xs sm:text-sm mt-4 max-w-xl mx-auto font-light leading-relaxed drop-shadow">
-                From plush velvet bar stools and vanity seating to ergonomically crafted outdoor patio armchairs — curated for Addis Ababa's finest interiors.
-              </p>
-            </div>
+        <div className="relative z-10 max-w-4xl mx-auto px-4 sm:px-6 flex flex-col items-center">
+          <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-black/60 text-[#E8D5A3] border border-[#D4AF37]/60 text-[11px] font-black uppercase tracking-[0.35em] backdrop-blur-md shadow-2xl mb-3">
+            <Armchair className="w-4 h-4 text-[#D4AF37]" />
+            <span>C H A I R S   &amp;   S T O O L S</span>
           </div>
+
+          <h1 className="text-4xl sm:text-6xl md:text-7xl lg:text-8xl font-black uppercase tracking-tight text-white drop-shadow-[0_4px_16px_rgba(0,0,0,0.95)] leading-none my-2">
+            DESIGNER SEATING
+            <span className="block mt-2 font-serif text-3xl sm:text-5xl md:text-6xl italic font-light text-amber-100 drop-shadow-md capitalize">
+              Armchairs &amp; Premium Bar Stools
+            </span>
+          </h1>
+
+          <p className="text-white text-xs sm:text-base md:text-lg mt-3 max-w-2xl mx-auto font-medium leading-relaxed drop-shadow-[0_2px_8px_rgba(0,0,0,0.95)]">
+            From plush velvet bar stools and vanity seating to ergonomically crafted outdoor patio armchairs — curated for Addis Ababa's finest interiors.
+          </p>
         </div>
       </section>
 

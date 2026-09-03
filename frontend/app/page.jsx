@@ -157,7 +157,7 @@ export default function Home() {
     <main className="min-h-screen bg-[#f7f3ec] text-slate-900 font-sans">
 
       {/* HERO BANNER — full-width, edge-to-edge */}
-      <section className="relative min-h-[72vh] flex items-end overflow-hidden bg-[#0B0F17]">
+      <section className="relative min-h-[52vh] sm:min-h-[58vh] flex items-end overflow-hidden bg-[#0B0F17] py-10 sm:py-14">
         <div className="absolute inset-0 z-0">
           <video
             autoPlay
@@ -176,19 +176,19 @@ export default function Home() {
         </div>
 
         <div className="relative z-10 container mx-auto px-6 pb-10 sm:pb-14 animate-fade-up">
-          <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-white/10 backdrop-blur-md border border-[#D4AF37]/40 text-[#E8D5A3] text-[10px] sm:text-[11px] font-semibold uppercase tracking-[0.22em] mb-4 shadow-md">
-            <Building2 className="w-3.5 h-3.5 text-[#D4AF37]" />
-            <span>Addis Ababa's Upscale Furnisher</span>
+          <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-black/60 backdrop-blur-md border border-[#D4AF37]/50 text-[#E8D5A3] text-[11px] font-black uppercase tracking-[0.35em] mb-4 shadow-xl">
+            <Building2 className="w-4 h-4 text-[#D4AF37]" />
+            <span>G O R G E O U S   F U R N I T U R E</span>
           </div>
 
-          <h1 className="text-white text-3xl sm:text-5xl lg:text-[4.25rem] font-serif font-medium max-w-4xl leading-[1.05] mb-4">
-            Furniture that feels like
-            <span className="block mt-1 italic font-normal gold-gradient-text-soft text-2xl sm:text-4xl lg:text-[3.5rem]">
-              a private showroom
+          <h1 className="text-white text-4xl sm:text-6xl lg:text-7xl font-black uppercase tracking-tight max-w-4xl leading-none mb-3 drop-shadow-[0_4px_16px_rgba(0,0,0,0.95)]">
+            YOUR DREAM
+            <span className="block mt-2 italic font-serif font-light text-amber-100 text-2xl sm:text-4xl lg:text-5xl capitalize drop-shadow-md">
+              Furniture that feels like a private showroom
             </span>
           </h1>
 
-          <p className="text-amber-50/80 text-sm sm:text-base max-w-2xl font-light mb-7 leading-relaxed">
+          <p className="text-white text-sm sm:text-base md:text-lg max-w-2xl font-medium mb-7 leading-relaxed drop-shadow-[0_2px_8px_rgba(0,0,0,0.95)]">
             Imported sofa sets, king bedroom suites, and marble dining tables — styled, tested, and delivered from four premier hubs across Addis Ababa.
           </p>
 

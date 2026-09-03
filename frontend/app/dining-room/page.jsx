@@ -67,37 +67,36 @@ export default function DiningRoomPage() {
 
   return (
     <main className="min-h-screen bg-[#f7f3ec] text-slate-900 font-sans pb-24">
-      <section className="relative overflow-hidden bg-slate-950 min-h-[90vh]">
+      {/* HERO BANNER SECTION (BOLD WHITE DISPLAY) */}
+      <section className="relative overflow-hidden bg-[#0B0F17] py-16 sm:py-24 md:py-28 text-center text-white">
         <div className="absolute inset-0 z-0 select-none pointer-events-none">
           <Image
-            src="/images/Table1.png"
+            src="/images/Dinning table 1.png"
             alt="Luxury dining room furniture"
             fill
             priority
             sizes="100vw"
-            className="h-full w-full object-cover object-center opacity-100 scale-105"
+            className="object-cover object-center opacity-80 scale-100 transition-all duration-700 brightness-90"
           />
-          <div className="absolute inset-0 bg-gradient-to-t from-[#0B0F17] via-[#0B0F17]/0 to-[#0B0F17]/5" />
+          <div className="absolute inset-0 bg-gradient-to-t from-[#0B0F17] via-[#0B0F17]/60 to-[#0B0F17]/30" />
         </div>
 
-        <div className="relative z-10 flex min-h-[90vh] items-center justify-center px-4 sm:px-6">
-          <div className="max-w-4xl text-center">
-            <div className="mb-5 inline-flex items-center gap-2 rounded-full border border-[#D4AF37]/60 bg-slate-900/60 px-4 py-2 text-[11px] font-extrabold uppercase tracking-[0.24em] text-[#E8D5A3] backdrop-blur-md shadow-lg">
-              <Flame className="h-4 w-4 text-[#D4AF37] animate-pulse" />
-              <span>Dining Room & Signature Tables</span>
-            </div>
-
-            <h1 className="text-4xl font-serif font-bold tracking-tight text-white drop-shadow-md sm:text-5xl md:text-6xl lg:text-7xl">
-              Fine Dining
-              <span className="mt-2 block gold-gradient-text italic font-serif text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-normal">
-                Reimagined in Luxury
-              </span>
-            </h1>
-
-            <p className="mx-auto mt-5 max-w-2xl text-sm leading-relaxed text-amber-50/90 sm:text-base md:text-lg drop-shadow-[0_2px_4px_rgba(0,0,0,0.75)]">
-              Experience beautifully crafted dining tables, elegant seating, and premium statement pieces designed for modern Addis Ababa homes.
-            </p>
+        <div className="relative z-10 max-w-4xl mx-auto px-4 sm:px-6 flex flex-col items-center">
+          <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-black/60 text-[#E8D5A3] border border-[#D4AF37]/60 text-[11px] font-black uppercase tracking-[0.35em] backdrop-blur-md shadow-2xl mb-3">
+            <Flame className="w-4 h-4 text-[#D4AF37] animate-pulse" />
+            <span>D I N I N G   R O O M</span>
           </div>
+
+          <h1 className="text-4xl sm:text-6xl md:text-7xl lg:text-8xl font-black uppercase tracking-tight text-white drop-shadow-[0_4px_16px_rgba(0,0,0,0.95)] leading-none my-2">
+            FINE DINING
+            <span className="block mt-2 font-serif text-3xl sm:text-5xl md:text-6xl italic font-light text-amber-100 drop-shadow-md capitalize">
+              Reimagined in Luxury
+            </span>
+          </h1>
+
+          <p className="text-white text-xs sm:text-base md:text-lg mt-3 max-w-2xl mx-auto font-medium leading-relaxed drop-shadow-[0_2px_8px_rgba(0,0,0,0.95)]">
+            Experience beautifully crafted dining tables, elegant seating, and premium statement pieces designed for modern Addis Ababa homes.
+          </p>
         </div>
       </section>
 
