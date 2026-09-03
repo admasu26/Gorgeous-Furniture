@@ -157,7 +157,7 @@ export default function Home() {
     <main className="min-h-screen bg-[#f7f3ec] text-slate-900 font-sans">
 
       {/* HERO BANNER — full-width, edge-to-edge */}
-      <section className="relative min-h-[52vh] sm:min-h-[58vh] flex items-end overflow-hidden bg-[#0B0F17] py-10 sm:py-14">
+      <section className="relative min-h-[62vh] flex items-end overflow-hidden bg-[#0B0F17] py-12 sm:py-16">
         <div className="absolute inset-0 z-0">
           <video
             autoPlay

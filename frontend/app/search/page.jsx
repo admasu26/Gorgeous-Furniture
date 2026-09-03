@@ -52,7 +52,7 @@ function SearchResults() {
     <main className="min-h-screen bg-[#f7f3ec] text-slate-900 font-sans pb-24">
 
       {/* HERO / SEARCH BANNER */}
-      <section className="relative overflow-hidden bg-[#0B0F17] py-14 sm:py-20 text-center text-white">
+      <section className="relative overflow-hidden bg-[#0B0F17] min-h-[62vh] flex items-center justify-center text-center text-white">
         <div className="absolute inset-0 bg-gradient-to-t from-[#0B0F17] via-[#0B0F17]/80 to-[#0B0F17]/60" />
         <div className="relative z-10 max-w-2xl mx-auto px-4">
           <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-black/60 text-[#E8D5A3] border border-[#D4AF37]/60 text-[11px] font-black uppercase tracking-[0.35em] backdrop-blur-md shadow-2xl mb-3">

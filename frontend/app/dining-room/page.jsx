@@ -33,7 +33,7 @@ export default function DiningRoomPage() {
   return (
     <main className="min-h-screen bg-[#f7f3ec] text-slate-900 font-sans pb-24">
       {/* HERO BANNER SECTION (BOLD WHITE DISPLAY) */}
-      <section className="relative overflow-hidden bg-[#0B0F17] py-16 sm:py-24 md:py-28 text-center text-white">
+      <section className="relative overflow-hidden bg-[#0B0F17] min-h-[62vh] flex items-center justify-center text-center text-white">
         <div className="absolute inset-0 z-0 select-none pointer-events-none">
           <Image
             src="/images/Dinning table 1.png"

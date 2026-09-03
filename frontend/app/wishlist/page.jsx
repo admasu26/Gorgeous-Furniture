@@ -19,7 +19,7 @@ export default function WishlistPage() {
     <main className="min-h-screen bg-[#f7f3ec] text-slate-900 font-sans pb-24">
 
       {/* HERO BANNER */}
-      <section className="relative overflow-hidden bg-[#0B0F17] py-16 sm:py-20 text-center text-white">
+      <section className="relative overflow-hidden bg-[#0B0F17] min-h-[62vh] flex items-center justify-center text-center text-white">
         <div className="absolute inset-0 z-0 select-none pointer-events-none">
           <div className="absolute inset-0 bg-gradient-to-t from-[#0B0F17] via-[#0B0F17]/80 to-[#0B0F17]/60" />
         </div>
