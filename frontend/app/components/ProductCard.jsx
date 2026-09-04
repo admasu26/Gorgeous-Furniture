@@ -6,7 +6,7 @@ import { useShop } from './ShopContext';
 import { Eye, Heart, ShoppingBag, Star } from 'lucide-react';
 import { WhatsAppIcon } from './Icons';
 
-export default function ProductCard({ product }) {
+export default function ProductCard({ product, variant = 'card' }) {
   const { addToCart, toggleWishlist, wishlist, setQuickViewProduct } = useShop();
 
   const {
@@ -29,10 +29,12 @@ export default function ProductCard({ product }) {
     return `https://wa.me/251940510000?text=${encodeURIComponent(msg)}`;
   };
 
+  const isEditorial = variant === 'editorial';
+
   return (
-    <div className="group flex flex-col bg-white rounded-[22px] overflow-hidden border border-[#eadfcb] shadow-[0_10px_30px_rgba(26,24,20,0.05)] gold-card-hover transition-all duration-500">
+    <div className={`${isEditorial ? 'group flex flex-col' : 'group flex flex-col bg-white rounded-[22px] overflow-hidden border border-[#eadfcb] shadow-[0_10px_30px_rgba(26,24,20,0.05)] gold-card-hover'} transition-all duration-500`}>
       {/* Image Container */}
-      <div className="relative aspect-[4/5] bg-[#f3eadc] overflow-hidden">
+      <div className={`relative aspect-[4/5] bg-[#f3eadc] overflow-hidden ${isEditorial ? 'border-b-2 border-[#c9a227]' : ''}`}>
         <Image
           src={img}
           alt={name}
@@ -87,7 +89,7 @@ export default function ProductCard({ product }) {
       </div>
 
       {/* Info Container */}
-      <div className="p-5 flex flex-col flex-1 justify-between text-left bg-white">
+      <div className={`${isEditorial ? 'pt-5' : 'p-5 bg-white'} flex flex-col flex-1 justify-between text-left`}>
         <div>
           {category && (
             <span className="text-[10px] font-semibold text-[#8c6d2a] uppercase tracking-[0.18em] block mb-1.5">
