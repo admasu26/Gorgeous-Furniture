@@ -88,7 +88,7 @@ export default function Navbar() {
               </Link>
               <div className="h-3 w-[1px] bg-white/15" />
               <a 
-                href="https://www.tiktok.com" 
+                href="https://www.tiktok.com/@gorgeousfurniture_?is_from_webapp=1&sender_device=pc" 
                 target="_blank" 
                 rel="noopener noreferrer"
                 className="text-[#E8D5A3] font-semibold hover:text-[#D4AF37] flex items-center gap-1"
@@ -341,7 +341,7 @@ export default function Navbar() {
                     <span>Mon - Fri: 8:30 - 18:00 | Sat: 9:00 - 17:00</span>
                   </div>
                   <a 
-                    href="https://www.tiktok.com" 
+                    href="https://www.tiktok.com/@gorgeousfurniture_?is_from_webapp=1&sender_device=pc" 
                     target="_blank" 
                     rel="noopener noreferrer"
                     className="flex items-center gap-2 text-xs font-semibold text-[#8c6d2a] pt-1"
