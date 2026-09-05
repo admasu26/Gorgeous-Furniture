@@ -22,7 +22,7 @@ export default function ProductCard({ product, variant = 'card' }) {
 
   const formattedPrice = typeof price === 'number'
     ? `ETB ${price.toLocaleString()}`
-    : price || 'ETB 24,999.00';
+    : price || 'ETB 325,000.00';
 
   const generateWhatsAppLink = () => {
     const msg = `Hi Gorgeous Furniture Ethiopia! I'd like to check stock and pricing in Addis Ababa for the ${name} (${formattedPrice}).`;

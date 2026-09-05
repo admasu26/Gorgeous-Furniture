@@ -8,7 +8,7 @@ export const LIVING_PRODUCTS = [
   {
     id: 'enfriador-lounge-suite',
     name: 'Enfriador 3-Piece Lounge Suite with Bar Fridge',
-    price: 115000,
+    price: 385000,
     img: '/hero_recliner.png',
     badge: 'BESTSELLER',
     category: 'Lounge Suites',
@@ -18,7 +18,7 @@ export const LIVING_PRODUCTS = [
   {
     id: 'z600-massage-chair',
     name: 'Z600 Britanica Zero Gravity Massage Chair',
-    price: 145000,
+    price: 445000,
     img: '/massage_chair.png',
     badge: 'FLAGSHIP',
     category: 'Massage Chairs',
@@ -28,7 +28,7 @@ export const LIVING_PRODUCTS = [
   {
     id: 'smart-power-recliner',
     name: 'Smart Power Motion Recliner 3-Seater Sofa',
-    price: 95000,
+    price: 350000,
     img: '/images/Sofa3.png',
     badge: 'NEW',
     category: 'Recliners',
@@ -38,7 +38,7 @@ export const LIVING_PRODUCTS = [
   {
     id: 'modular-l-shape-sofa',
     name: 'Modular Corner Velvet L-Shape Sectional',
-    price: 88000,
+    price: 320000,
     img: '/images/Sofa4.png',
     badge: 'TRENDING',
     category: 'Sectionals',
@@ -51,7 +51,7 @@ export const BEDROOM_PRODUCTS = [
   {
     id: 'emperor-king-bedroom-suite',
     name: 'Emperor Royal Tufted King Bedroom Package',
-    price: 185000,
+    price: 485000,
     img: '/king_bedroom.png',
     badge: 'FLAGSHIP',
     category: 'King Bedroom Package',
@@ -61,7 +61,7 @@ export const BEDROOM_PRODUCTS = [
   {
     id: 'nordic-velvet-bedroom-set',
     name: 'Nordic Velvet King Bed & Wardrobe Package',
-    price: 165000,
+    price: 425000,
     img: '/king_bedroom.png',
     badge: 'BESTSELLER',
     category: 'King Bedroom Package',
@@ -71,7 +71,7 @@ export const BEDROOM_PRODUCTS = [
   {
     id: 'modern-floating-bed-package',
     name: 'Modern Ambient LED Floating King Bed Suite',
-    price: 155000,
+    price: 395000,
     img: '/images/bed2.png',
     badge: 'NEW ARRIVAL',
     category: 'King Bedroom Package',
@@ -81,7 +81,7 @@ export const BEDROOM_PRODUCTS = [
   {
     id: 'bespoke-leather-bedroom-set',
     name: 'Bespoke Genuine Leather Executive Bedroom Set',
-    price: 195000,
+    price: 515000,
     img: '/images/bed3.png',
     badge: 'CUSTOMIZABLE',
     category: 'King Bedroom Package',
@@ -94,7 +94,7 @@ export const DINING_PRODUCTS = [
   {
     id: 'royal-oval-table',
     name: 'Royal Oval Dining Table',
-    price: 168000,
+    price: 438000,
     img: '/images/Table1.png',
     badge: 'BESTSELLER',
     category: 'Dining Sets',
@@ -104,7 +104,7 @@ export const DINING_PRODUCTS = [
   {
     id: 'harbor-extension-table',
     name: 'Harbor 8-Seater Dining Table',
-    price: 197000,
+    price: 497000,
     img: '/images/Table2.png',
     badge: 'PREMIUM',
     category: 'Dining Tables',
@@ -114,7 +114,7 @@ export const DINING_PRODUCTS = [
   {
     id: 'elegance-dining-suite',
     name: 'Elegance Dining Suite',
-    price: 139000,
+    price: 379000,
     img: '/images/Dinning table 1.png',
     badge: 'NEW',
     category: 'Dining Suites',
@@ -124,7 +124,7 @@ export const DINING_PRODUCTS = [
   {
     id: 'heritage-wood-chair-set',
     name: 'Heritage Wood Chair Set',
-    price: 84000,
+    price: 340000,
     img: '/images/Dinning table 2.png',
     badge: 'TRENDING',
     category: 'Dining Chairs',
@@ -137,7 +137,7 @@ export const TV_PRODUCTS = [
   {
     id: 'marble-tv-unit',
     name: 'Calacatta Marble Top Media Console (2.2m)',
-    price: 55000,
+    price: 355000,
     img: '/images/Table1.png',
     badge: 'POPULAR',
     category: 'TV Units',
@@ -147,7 +147,7 @@ export const TV_PRODUCTS = [
   {
     id: 'gold-coffee-table-set',
     name: 'Luxury Gold & Slate Nesting Coffee Tables',
-    price: 28000,
+    price: 318000,
     img: '/images/Table2.png',
     badge: 'BESTSELLER',
     category: 'Coffee Tables',
@@ -157,7 +157,7 @@ export const TV_PRODUCTS = [
   {
     id: 'fluted-wood-tv-stand',
     name: 'Nordic Fluted Oak TV Stand Console',
-    price: 42000,
+    price: 342000,
     img: '/images/Table3.png',
     badge: 'NEW',
     category: 'TV Units',
@@ -167,7 +167,7 @@ export const TV_PRODUCTS = [
   {
     id: 'glass-coffee-table',
     name: 'Tempered Glass & Brass Coffee Table',
-    price: 22000,
+    price: 312000,
     img: '/images/Table1.png',
     badge: 'CLASSIC',
     category: 'Coffee Tables',
@@ -177,14 +177,14 @@ export const TV_PRODUCTS = [
 ];
 
 export const CHAIRS_PRODUCTS = [
-  { id: 'orissa-chair', name: 'Orissa Velvet Dining Chair (Set of 2)', price: 18500, img: '/marble_dining.png', badge: 'POPULAR', category: 'Dining Chairs', href: '/chairs', description: 'Curved velvet backrest with stainless steel legs.' },
-  { id: 'velvet-bar-stool', name: 'Velvet Counter Bar Stool - Gold Legs', price: 12500, img: '/images/Chair1.png', badge: 'BESTSELLER', category: 'Bar Stools', href: '/chairs', description: 'Ergonomic high-back bar stool with polished gold chrome frame.' },
-  { id: 'shell-occasional-chair', name: 'Shell Velvet Occasional Armchair', price: 24500, img: '/images/Chair2.png', badge: 'NEW', category: 'Occasional Chairs', href: '/chairs', description: 'Scalloped backshell design in deep emerald or plush grey.' },
-  { id: 'woven-patio-chair-set', name: 'Woven Outdoor Patio Chair Set', price: 28500, img: '/images/Chair1.png', badge: 'PATIO', category: 'Outdoor Seating', href: '/chairs', description: 'Weather-resistant synthetic rattan dining chairs with memory foam cushions.' },
-  { id: 'nordic-armchair', name: 'Modern Nordic Oak Armchair', price: 19500, img: '/images/Chair2.png', badge: 'HOT', category: 'Lounge Chairs', href: '/chairs', description: 'Minimalist solid oak wood frame with woven beige upholstery.' },
-  { id: 'swivel-vanity-chair', name: 'Luxury Swivel Velvet Vanity Chair', price: 16500, img: '/images/Chair1.png', badge: 'TRENDING', category: 'Vanity Seating', href: '/chairs', description: '360-degree smooth swivel mechanism with gold base.' },
-  { id: 'industrial-counter-stool', name: 'Industrial Leather Counter Stool', price: 11500, img: '/images/Chair2.png', badge: 'CLASSIC', category: 'Bar Stools', href: '/chairs', description: 'Rustic dark leather padded seat on matte black steel legs.' },
-  { id: 'boucle-lounge-chair', name: 'Bouclé Cozy Accent Lounge Chair', price: 32500, img: '/images/Chair1.png', badge: 'LUXURY', category: 'Lounge Chairs', href: '/chairs', description: 'Plush cream bouclé textured cloud chair.' },
+  { id: 'orissa-chair', name: 'Orissa Velvet Dining Chair (Set of 2)', price: 318500, img: '/marble_dining.png', badge: 'POPULAR', category: 'Dining Chairs', href: '/chairs', description: 'Curved velvet backrest with stainless steel legs.' },
+  { id: 'velvet-bar-stool', name: 'Velvet Counter Bar Stool - Gold Legs', price: 312500, img: '/images/Chair1.png', badge: 'BESTSELLER', category: 'Bar Stools', href: '/chairs', description: 'Ergonomic high-back bar stool with polished gold chrome frame.' },
+  { id: 'shell-occasional-chair', name: 'Shell Velvet Occasional Armchair', price: 324500, img: '/images/Chair2.png', badge: 'NEW', category: 'Occasional Chairs', href: '/chairs', description: 'Scalloped backshell design in deep emerald or plush grey.' },
+  { id: 'woven-patio-chair-set', name: 'Woven Outdoor Patio Chair Set', price: 328500, img: '/images/Chair1.png', badge: 'PATIO', category: 'Outdoor Seating', href: '/chairs', description: 'Weather-resistant synthetic rattan dining chairs with memory foam cushions.' },
+  { id: 'nordic-armchair', name: 'Modern Nordic Oak Armchair', price: 319500, img: '/images/Chair2.png', badge: 'HOT', category: 'Lounge Chairs', href: '/chairs', description: 'Minimalist solid oak wood frame with woven beige upholstery.' },
+  { id: 'swivel-vanity-chair', name: 'Luxury Swivel Velvet Vanity Chair', price: 316500, img: '/images/Chair1.png', badge: 'TRENDING', category: 'Vanity Seating', href: '/chairs', description: '360-degree smooth swivel mechanism with gold base.' },
+  { id: 'industrial-counter-stool', name: 'Industrial Leather Counter Stool', price: 311500, img: '/images/Chair2.png', badge: 'CLASSIC', category: 'Bar Stools', href: '/chairs', description: 'Rustic dark leather padded seat on matte black steel legs.' },
+  { id: 'boucle-lounge-chair', name: 'Bouclé Cozy Accent Lounge Chair', price: 332500, img: '/images/Chair1.png', badge: 'LUXURY', category: 'Lounge Chairs', href: '/chairs', description: 'Plush cream bouclé textured cloud chair.' },
 ];
 
 /** Flat combined list of every product across all categories */

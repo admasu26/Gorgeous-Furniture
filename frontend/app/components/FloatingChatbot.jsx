@@ -57,41 +57,41 @@ const KB = [
   // ── LIVING ROOM / SOFAS ─────────────────────────────────────────
   {
     patterns: ['sofa', 'couch', 'lounge', 'suite', 'sectional', 'living room', 'seating', 'velvet sofa', 'l shape', 'corner sofa', 'modular'],
-    reply: `🛋️ **Sofa Sets & Living Room Collection:**\n\n1. **Enfriador 3-Piece Lounge Suite** — ETB 115,000\n   Built-in bar fridge, cup holders, USB charging, recliners\n\n2. **Smart Power Motion Recliner 3-Seater** — ETB 95,000\n   Electronic push-button recline, lumbar support\n\n3. **Modular Corner Velvet L-Shape Sectional** — ETB 88,000\n   Deep seating, reversible chaise, feather-down cushions\n\n📍 Try them in-store at CMC Flagship or Gerji Studio!`,
+    reply: `🛋️ **Sofa Sets & Living Room Collection:**\n\n1. **Enfriador 3-Piece Lounge Suite** — ETB 385,000\n   Built-in bar fridge, cup holders, USB charging, recliners\n\n2. **Smart Power Motion Recliner 3-Seater** — ETB 350,000\n   Electronic push-button recline, lumbar support\n\n3. **Modular Corner Velvet L-Shape Sectional** — ETB 320,000\n   Deep seating, reversible chaise, feather-down cushions\n\n📍 Try them in-store at CMC Flagship or Gerji Studio!`,
   },
   {
     patterns: ['recliner', 'recline', 'push button', 'electric sofa', 'power sofa', 'motion sofa'],
-    reply: `🛋️ **Smart Power Recliners at Gorgeous Furniture:**\n\n✅ Electronic push-button reclining\n✅ Adjustable lumbar support\n✅ Available in 50+ fabric & leather colors\n✅ 2-Year motor warranty\n\n**Smart Power Motion Recliner 3-Seater** — ETB 95,000\n**Enfriador Lounge Suite with Bar Fridge** — ETB 115,000\n\nWant to customize colors? Ask us on WhatsApp: **0940510000**`,
+    reply: `🛋️ **Smart Power Recliners at Gorgeous Furniture:**\n\n✅ Electronic push-button reclining\n✅ Adjustable lumbar support\n✅ Available in 50+ fabric & leather colors\n✅ 2-Year motor warranty\n\n**Smart Power Motion Recliner 3-Seater** — ETB 350,000\n**Enfriador Lounge Suite with Bar Fridge** — ETB 385,000\n\nWant to customize colors? Ask us on WhatsApp: **0940510000**`,
   },
   {
     patterns: ['bar fridge', 'enfriador', 'fridge sofa', 'couch fridge', 'cooling'],
-    reply: `🍾 **Enfriador 3-Piece Lounge Suite with Built-in Bar Fridge**\n\nPrice: **ETB 115,000**\n\n✅ Built-in bar/mini fridge in armrest\n✅ Cup holders & storage compartments\n✅ Electronic reclining seats\n✅ USB charging ports\n✅ 50+ color options\n\nThis is our most popular smart living room set!\n📞 Order via WhatsApp: **0940510000**`,
+    reply: `🍾 **Enfriador 3-Piece Lounge Suite with Built-in Bar Fridge**\n\nPrice: **ETB 385,000**\n\n✅ Built-in bar/mini fridge in armrest\n✅ Cup holders & storage compartments\n✅ Electronic reclining seats\n✅ USB charging ports\n✅ 50+ color options\n\nThis is our most popular smart living room set!\n📞 Order via WhatsApp: **0940510000**`,
   },
 
   // ── MASSAGE CHAIRS ──────────────────────────────────────────────
   {
     patterns: ['massage', 'massage chair', 'z600', 'zero gravity', 'spa chair', 'back massage'],
-    reply: `💆 **Z600 Britanica Zero Gravity Massage Chair**\n\nPrice: **ETB 145,000** | FLAGSHIP product\n\n✅ Zero-gravity recline position\n✅ Full-body massage (back, legs, neck, shoulders)\n✅ Built-in Bluetooth speaker system\n✅ Heating pads for deep muscle relief\n✅ Multiple massage modes: Shiatsu, Roll, Air Compress\n✅ Remote control + App connectivity\n\nTry it at our **CMC Flagship Showroom**!\n📞 Book a demo: **0940510000**`,
+    reply: `💆 **Z600 Britanica Zero Gravity Massage Chair**\n\nPrice: **ETB 445,000** | FLAGSHIP product\n\n✅ Zero-gravity recline position\n✅ Full-body massage (back, legs, neck, shoulders)\n✅ Built-in Bluetooth speaker system\n✅ Heating pads for deep muscle relief\n✅ Multiple massage modes: Shiatsu, Roll, Air Compress\n✅ Remote control + App connectivity\n\nTry it at our **CMC Flagship Showroom**!\n📞 Book a demo: **0940510000**`,
   },
 
   // ── BEDROOM ─────────────────────────────────────────────────────
   {
     patterns: ['bedroom', 'bed', 'king', 'wardrobe', 'dresser', 'nightstand', 'bedroom package', 'bedroom set', 'bedroom suite', 'master bedroom'],
-    reply: `🛏️ **King Bedroom Packages:**\n\n1. **Emperor Royal Tufted King Suite** — ETB 185,000\n   Velvet tufted bedframe + 2 nightstands + 6-door wardrobe + vanity\n\n2. **Nordic Velvet King Bed & Wardrobe** — ETB 165,000\n   Wingback bedframe + 4-drawer dresser + soft-close bedside tables\n\n3. **Ambient LED Floating King Bed Suite** — ETB 155,000\n   LED headboard + wireless phone chargers + dual nightstands\n\n4. **Bespoke Leather Executive Bedroom** — ETB 195,000\n   Italian grain leather + solid oak frame + full vanity mirror\n\n🛋️ All packages include free Addis Ababa delivery over ETB 50,000!`,
+    reply: `🛏️ **King Bedroom Packages:**\n\n1. **Emperor Royal Tufted King Suite** — ETB 485,000\n   Velvet tufted bedframe + 2 nightstands + 6-door wardrobe + vanity\n\n2. **Nordic Velvet King Bed & Wardrobe** — ETB 425,000\n   Wingback bedframe + 4-drawer dresser + soft-close bedside tables\n\n3. **Ambient LED Floating King Bed Suite** — ETB 395,000\n   LED headboard + wireless phone chargers + dual nightstands\n\n4. **Bespoke Leather Executive Bedroom** — ETB 515,000\n   Italian grain leather + solid oak frame + full vanity mirror\n\n🛋️ All packages include free Addis Ababa delivery over ETB 300,000!`,
   },
   {
     patterns: ['led bed', 'floating bed', 'led headboard', 'ambient lighting bed'],
-    reply: `💡 **Modern Ambient LED Floating King Bed Suite** — ETB 155,000\n\n✅ Floating platform design (off-floor aesthetic)\n✅ Built-in ambient LED strip lighting in headboard\n✅ Wireless Qi phone charging pads\n✅ Two matching nightstands included\n✅ Available in linen, velvet, or leather upholstery\n\nPerfect for a modern luxury master bedroom!\n📞 Contact: **0940510000**`,
+    reply: `💡 **Modern Ambient LED Floating King Bed Suite** — ETB 395,000\n\n✅ Floating platform design (off-floor aesthetic)\n✅ Built-in ambient LED strip lighting in headboard\n✅ Wireless Qi phone charging pads\n✅ Two matching nightstands included\n✅ Available in linen, velvet, or leather upholstery\n\nPerfect for a modern luxury master bedroom!\n📞 Contact: **0940510000**`,
   },
   {
     patterns: ['leather bed', 'leather bedroom', 'executive bedroom', 'bespoke'],
-    reply: `🏆 **Bespoke Genuine Leather Executive Bedroom Set** — ETB 195,000\n\n✅ Imported Italian grain leather upholstery\n✅ Solid oak hardwood frame\n✅ Custom mattress support system\n✅ Full-length vanity mirror dresser included\n✅ Customizable size and leather color\n\nThis is our premium flagship bedroom collection.\n📞 Custom orders: **0940510000**`,
+    reply: `🏆 **Bespoke Genuine Leather Executive Bedroom Set** — ETB 515,000\n\n✅ Imported Italian grain leather upholstery\n✅ Solid oak hardwood frame\n✅ Custom mattress support system\n✅ Full-length vanity mirror dresser included\n✅ Customizable size and leather color\n\nThis is our premium flagship bedroom collection.\n📞 Custom orders: **0940510000**`,
   },
 
   // ── DINING ──────────────────────────────────────────────────────
   {
     patterns: ['dining', 'dinner', 'table', 'dining table', 'dining room', 'dining set', 'dining chair', 'eating'],
-    reply: `🍽️ **Dining Room Collection:**\n\n1. **Royal Oval Dining Table** — ETB 168,000 ⭐ BESTSELLER\n   Warm walnut finish, luxe oval centerpiece\n\n2. **Harbor 8-Seater Dining Table** — ETB 197,000\n   Premium solid wood, extended family dining\n\n3. **Elegance Dining Suite** — ETB 139,000\n   Soft curves, modern upscale design\n\n4. **Heritage Wood Chair Set** — ETB 84,000\n   Hand-finished hardwood dining chairs\n\n📍 See them live at our Gerji or Betel showrooms!`,
+    reply: `🍽️ **Dining Room Collection:**\n\n1. **Royal Oval Dining Table** — ETB 438,000 ⭐ BESTSELLER\n   Warm walnut finish, luxe oval centerpiece\n\n2. **Harbor 8-Seater Dining Table** — ETB 497,000\n   Premium solid wood, extended family dining\n\n3. **Elegance Dining Suite** — ETB 379,000\n   Soft curves, modern upscale design\n\n4. **Heritage Wood Chair Set** — ETB 340,000\n   Hand-finished hardwood dining chairs\n\n📍 See them live at our Gerji or Betel showrooms!`,
   },
   {
     patterns: ['marble dining', 'marble table', 'stone table'],
@@ -101,27 +101,27 @@ const KB = [
   // ── TV STANDS & COFFEE TABLES ───────────────────────────────────
   {
     patterns: ['tv stand', 'tv unit', 'media unit', 'tv console', 'media center', 'television stand'],
-    reply: `📺 **TV Stands & Media Units:**\n\n1. **Calacatta Marble Top Media Console (2.2m)** — ETB 55,000\n   White marble top, soft-close drawers, gold trim\n\n2. **Nordic Fluted Oak TV Stand Console** — ETB 42,000\n   Tambour fluted doors, cable management\n\nBoth available in our **Betel Hub** showroom!\n📞 Enquire: **0940510000**`,
+    reply: `📺 **TV Stands & Media Units:**\n\n1. **Calacatta Marble Top Media Console (2.2m)** — ETB 355,000\n   White marble top, soft-close drawers, gold trim\n\n2. **Nordic Fluted Oak TV Stand Console** — ETB 342,000\n   Tambour fluted doors, cable management\n\nBoth available in our **Betel Hub** showroom!\n📞 Enquire: **0940510000**`,
   },
   {
     patterns: ['coffee table', 'nesting table', 'side table', 'center table', 'glass table', 'round table'],
-    reply: `☕ **Coffee Tables & Nesting Tables:**\n\n1. **Luxury Gold & Slate Nesting Coffee Tables** — ETB 28,000\n   Set of 2, sintered stone top, champagne gold base ⭐ BESTSELLER\n\n2. **Tempered Glass & Brass Coffee Table** — ETB 22,000\n   Heavy-duty glass shelf, geometric brass frame\n\n📞 Order or enquire: **0940510000**`,
+    reply: `☕ **Coffee Tables & Nesting Tables:**\n\n1. **Luxury Gold & Slate Nesting Coffee Tables** — ETB 318,000\n   Set of 2, sintered stone top, champagne gold base ⭐ BESTSELLER\n\n2. **Tempered Glass & Brass Coffee Table** — ETB 312,000\n   Heavy-duty glass shelf, geometric brass frame\n\n📞 Order or enquire: **0940510000**`,
   },
 
   // ── CHAIRS ──────────────────────────────────────────────────────
   {
     patterns: ['chair', 'stool', 'bar stool', 'dining chair', 'accent chair', 'armchair', 'velvet chair', 'lounge chair'],
-    reply: `🪑 **Chairs & Seating Collection:**\n\n1. **Orissa Velvet Dining Chair (Set of 2)** — ETB 18,500\n2. **Velvet Counter Bar Stool – Gold Legs** — ETB 12,500 ⭐\n3. **Shell Velvet Occasional Armchair** — ETB 24,500\n4. **Modern Nordic Oak Armchair** — ETB 19,500\n5. **Bouclé Cozy Accent Lounge Chair** — ETB 32,500\n6. **Luxury Swivel Velvet Vanity Chair** — ETB 16,500\n7. **Industrial Leather Counter Stool** — ETB 11,500\n\n📞 Mix & match for your space: **0940510000**`,
+    reply: `🪑 **Chairs & Seating Collection:**\n\n1. **Orissa Velvet Dining Chair (Set of 2)** — ETB 318,500\n2. **Velvet Counter Bar Stool – Gold Legs** — ETB 312,500 ⭐\n3. **Shell Velvet Occasional Armchair** — ETB 324,500\n4. **Modern Nordic Oak Armchair** — ETB 319,500\n5. **Bouclé Cozy Accent Lounge Chair** — ETB 332,500\n6. **Luxury Swivel Velvet Vanity Chair** — ETB 316,500\n7. **Industrial Leather Counter Stool** — ETB 311,500\n\n📞 Mix & match for your space: **0940510000**`,
   },
   {
     patterns: ['bar stool', 'barstool', 'counter stool', 'high stool', 'kitchen stool'],
-    reply: `🍸 **Bar & Counter Stools at Gorgeous Furniture:**\n\n✅ **Velvet Counter Bar Stool – Gold Legs** — ETB 12,500\n   Ergonomic high-back, polished gold chrome frame ⭐ BESTSELLER\n\n✅ **Industrial Leather Counter Stool** — ETB 11,500\n   Rustic dark leather, matte black steel legs\n\nAvailable in multiple colors! 📞 **0940510000**`,
+    reply: `🍸 **Bar & Counter Stools at Gorgeous Furniture:**\n\n✅ **Velvet Counter Bar Stool – Gold Legs** — ETB 312,500\n   Ergonomic high-back, polished gold chrome frame ⭐ BESTSELLER\n\n✅ **Industrial Leather Counter Stool** — ETB 311,500\n   Rustic dark leather, matte black steel legs\n\nAvailable in multiple colors! 📞 **0940510000**`,
   },
 
   // ── PRICES & AFFORDABILITY ──────────────────────────────────────
   {
     patterns: ['price', 'cost', 'how much', 'afford', 'budget', 'expensive', 'cheap', 'discount', 'offer', 'promo', 'sale', 'etb', 'birr', 'rate'],
-    reply: `💰 **Gorgeous Furniture Price Range:**\n\n🪑 Chairs & Stools: ETB 11,500 – 32,500\n📺 TV Stands & Tables: ETB 22,000 – 55,000\n🛋️ Sofas & Recliners: ETB 88,000 – 115,000\n💆 Massage Chairs: ETB 145,000\n🍽️ Dining Tables: ETB 84,000 – 197,000\n🛏️ Bedroom Packages: ETB 155,000 – 195,000\n\n📞 For current promotions & special pricing, call: **0940510000**`,
+    reply: `💰 **Gorgeous Furniture Price Range:**\n\n🪑 Chairs & Stools: ETB 311,500 – 332,500\n📺 TV Stands & Tables: ETB 312,000 – 355,000\n🛋️ Sofas & Recliners: ETB 320,000 – 385,000\n💆 Massage Chairs: ETB 445,000\n🍽️ Dining Tables: ETB 340,000 – 497,000\n🛏️ Bedroom Packages: ETB 395,000 – 515,000\n\n📞 For current promotions & special pricing, call: **0940510000**`,
   },
   {
     patterns: ['installment', 'payment plan', 'credit', 'loan', 'pay monthly', 'lay-by', 'layaway', 'finance'],
@@ -131,7 +131,7 @@ const KB = [
   // ── DELIVERY ────────────────────────────────────────────────────
   {
     patterns: ['delivery', 'shipping', 'transport', 'deliver', 'bring home', 'home delivery', 'installation'],
-    reply: `🚚 **Delivery & Installation:**\n\n✅ **Free delivery in Addis Ababa** on orders above ETB 50,000\n✅ Professional installation included\n✅ Delivery team handles assembly & placement\n✅ Provincial Ethiopia delivery available (fees apply)\n\n⏱️ Typical delivery: 2–5 business days after order confirmation\n\n📞 Schedule delivery: **0940510000**`,
+    reply: `🚚 **Delivery & Installation:**\n\n✅ **Free delivery in Addis Ababa** on orders above ETB 300,000\n✅ Professional installation included\n✅ Delivery team handles assembly & placement\n✅ Provincial Ethiopia delivery available (fees apply)\n\n⏱️ Typical delivery: 2–5 business days after order confirmation\n\n📞 Schedule delivery: **0940510000**`,
   },
   {
     patterns: ['provincial', 'outside addis', 'outside the city', 'hawassa', 'bahirdar', 'mekelle', 'dire dawa', 'jimma', 'adama', 'ethiopia'],
@@ -163,7 +163,7 @@ const KB = [
   },
   {
     patterns: ['new', 'latest', 'new arrival', 'trending', 'popular', 'bestseller', 'best seller', 'top selling'],
-    reply: `🔥 **Trending & Bestsellers Right Now:**\n\n⭐ **Enfriador Lounge Suite with Bar Fridge** — ETB 115,000\n⭐ **Royal Oval Dining Table** — ETB 168,000\n⭐ **Velvet Counter Bar Stool – Gold Legs** — ETB 12,500\n⭐ **Z600 Massage Chair** — ETB 145,000\n⭐ **Emperor Royal Tufted Bedroom Suite** — ETB 185,000\n\n📍 All on display at our CMC Flagship Showroom!`,
+    reply: `🔥 **Trending & Bestsellers Right Now:**\n\n⭐ **Enfriador Lounge Suite with Bar Fridge** — ETB 385,000\n⭐ **Royal Oval Dining Table** — ETB 438,000\n⭐ **Velvet Counter Bar Stool – Gold Legs** — ETB 312,500\n⭐ **Z600 Massage Chair** — ETB 445,000\n⭐ **Emperor Royal Tufted Bedroom Suite** — ETB 485,000\n\n📍 All on display at our CMC Flagship Showroom!`,
   },
 
   // ── ABOUT THE BRAND ─────────────────────────────────────────────
@@ -175,7 +175,7 @@ const KB = [
   // ── COMPARISON / HELP CHOOSING ──────────────────────────────────
   {
     patterns: ['recommend', 'suggest', 'help me choose', 'best', 'advice', 'which one', 'better', 'difference', 'compare'],
-    reply: `🤝 **Need help choosing the right furniture?**\n\nHere's a quick guide:\n\n🛋️ **For a smart living room:** Enfriador Lounge Suite (ETB 115,000) — best all-in-one value\n💆 **For relaxation:** Z600 Massage Chair (ETB 145,000) — our flagship experience\n🛏️ **For a luxury bedroom:** Emperor Tufted Suite (ETB 185,000) — most complete package\n\n💬 **Send us a photo of your room on WhatsApp** (+251940510000) and our design team will give you personalized advice!`,
+    reply: `🤝 **Need help choosing the right furniture?**\n\nHere's a quick guide:\n\n🛋️ **For a smart living room:** Enfriador Lounge Suite (ETB 385,000) — best all-in-one value\n💆 **For relaxation:** Z600 Massage Chair (ETB 445,000) — our flagship experience\n🛏️ **For a luxury bedroom:** Emperor Tufted Suite (ETB 485,000) — most complete package\n\n💬 **Send us a photo of your room on WhatsApp** (+251940510000) and our design team will give you personalized advice!`,
   },
 
   // ── SOCIAL MEDIA ────────────────────────────────────────────────

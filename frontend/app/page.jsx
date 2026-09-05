@@ -19,18 +19,18 @@ const categories = [
 ];
 
 const featuredProducts = [
-  { id: 'engida', name: 'ENGIDA', price: 217000, img: '/images/Sofa2.png', badge: 'FEATURED', category: 'Sofas' },
-  { id: 'atse', name: 'ATSE', price: 160500, img: '/images/bed2.png', badge: 'FEATURED', category: 'Bedroom' },
-  { id: 'elfegn', name: 'ELFEGN', price: 'Price on request', img: '/images/Dinning table 2.png', badge: 'FEATURED', category: 'Dining Sets' },
+  { id: 'engida', name: 'ENGIDA', price: 387000, img: '/images/Sofa2.png', badge: 'FEATURED', category: 'Sofas' },
+  { id: 'atse', name: 'ATSE', price: 360500, img: '/images/bed2.png', badge: 'FEATURED', category: 'Bedroom' },
+  { id: 'elfegn', name: 'ELFEGN', price: 450000, img: '/images/Dinning table 2.png', badge: 'FEATURED', category: 'Dining Sets' },
 ];
 
 const latestProducts = [
-  { id: 'weynshet', name: 'WEYNSHET', price: 29500, img: '/images/Chair2.png', badge: 'NEW ARRIVAL', category: 'Chairs' },
-  { id: 'duraba', name: 'DURABA', price: 62000, img: '/images/Sofa3.png', badge: 'NEW ARRIVAL', category: 'Sofas' },
-  { id: 'misrak', name: 'MISRAK', price: 62000, img: '/images/Table1.png', badge: 'NEW ARRIVAL', category: 'Tables' },
-  { id: 'neus', name: 'NEUS', price: 117000, img: '/images/bed3.png', badge: 'NEW ARRIVAL', category: 'Bedroom' },
-  { id: 'engida-latest', name: 'ENGIDA', price: 217000, img: '/images/Sofa2.png', badge: 'NEW ARRIVAL', category: 'Sofas' },
-  { id: 'etege', name: 'ETEGE', price: 240000, img: '/images/Dinning table 3.png', badge: 'NEW ARRIVAL', category: 'Dining Sets' },
+  { id: 'weynshet', name: 'WEYNSHET', price: 315000, img: '/images/Chair2.png', badge: 'NEW ARRIVAL', category: 'Chairs' },
+  { id: 'duraba', name: 'DURABA', price: 335000, img: '/images/Sofa3.png', badge: 'NEW ARRIVAL', category: 'Sofas' },
+  { id: 'misrak', name: 'MISRAK', price: 335000, img: '/images/Table1.png', badge: 'NEW ARRIVAL', category: 'Tables' },
+  { id: 'neus', name: 'NEUS', price: 365000, img: '/images/bed3.png', badge: 'NEW ARRIVAL', category: 'Bedroom' },
+  { id: 'engida-latest', name: 'ENGIDA', price: 387000, img: '/images/Sofa2.png', badge: 'NEW ARRIVAL', category: 'Sofas' },
+  { id: 'etege', name: 'ETEGE', price: 420000, img: '/images/Dinning table 3.png', badge: 'NEW ARRIVAL', category: 'Dining Sets' },
 ];
 
 const trustItems = [

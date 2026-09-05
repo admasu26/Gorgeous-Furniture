@@ -9,7 +9,7 @@ export function ShopProvider({ children }) {
     {
       id: 'z600-massage-chair',
       name: 'Z600 Britanica Cozy Mate Massage Chair',
-      price: 24999,
+      price: 445000,
       image: 'https://images.unsplash.com/photo-1505693419173-42b921831191?auto=format&fit=crop&q=80&w=800',
       quantity: 1,
       variant: 'Obsidian Black',
@@ -34,7 +34,7 @@ export function ShopProvider({ children }) {
         {
           id: product.id || product.name.toLowerCase().replace(/\s+/g, '-'),
           name: product.name,
-          price: typeof product.price === 'number' ? product.price : parseFloat(product.price.replace(/[^0-9.]/g, '')) || 2999,
+          price: typeof product.price === 'number' ? product.price : parseFloat(product.price.replace(/[^0-9.]/g, '')) || 310000,
           image: product.img || product.image,
           quantity: 1,
           variant: product.variant || 'Standard',

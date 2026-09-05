@@ -15,7 +15,7 @@ export default function ProductQuickViewModal() {
 
   const formattedPrice = typeof price === 'number'
     ? `ETB ${price.toLocaleString()}`
-    : price || 'ETB 24,999.00';
+    : price || 'ETB 325,000.00';
 
   const generateWhatsAppInquiry = () => {
     const msg = `Hi Gorgeous Furniture Ethiopia! I'm interested in the ${name} (${formattedPrice}). Could you please share more details and availability at your Addis Ababa showrooms?`;
