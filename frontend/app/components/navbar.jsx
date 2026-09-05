@@ -18,7 +18,6 @@ import {
   ChevronRight,
   Clock,
   Home,
-  Grid,
 } from 'lucide-react';
 import { WhatsAppIcon } from './Icons';
 
@@ -106,7 +105,7 @@ export default function Navbar() {
           {/* Mobile Hamburger */}
           <button
             onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
-            className="lg:hidden p-2 text-slate-800 hover:text-[#8c6d2a] focus:outline-none transition"
+            className="order-last lg:order-none lg:hidden p-2 text-slate-800 hover:text-[#8c6d2a] focus:outline-none transition"
             aria-label="Toggle Menu"
           >
             {mobileMenuOpen ? <X className="w-6 h-6 text-[#8c6d2a]" /> : <Menu className="w-6 h-6" />}
@@ -183,7 +182,7 @@ export default function Navbar() {
             {/* Cart Icon */}
             <button
               onClick={() => setIsCartOpen(true)}
-              className="relative p-2 text-slate-700 hover:text-[#D4AF37] transition flex items-center gap-2 group"
+              className="relative hidden sm:flex p-2 text-slate-700 hover:text-[#D4AF37] transition items-center gap-2 group"
               aria-label="View Shopping Cart"
             >
               <div className="relative">
@@ -371,16 +370,6 @@ export default function Navbar() {
           <Home className="w-5 h-5" />
           <span className="text-[10px] mt-0.5 font-medium">Home</span>
         </Link>
-
-        <button
-          onClick={() => setMobileMenuOpen(true)}
-          className={`flex flex-col items-center justify-center w-16 py-1 ${
-            mobileMenuOpen ? 'text-[#8c6d2a]' : 'text-slate-500'
-          }`}
-        >
-          <Grid className="w-5 h-5" />
-          <span className="text-[10px] mt-0.5 font-medium">Categories</span>
-        </button>
 
         <Link
           href="/wishlist"
